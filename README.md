@@ -18,7 +18,9 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 # Set up
 
 1. Open your Visual Studio Code User Settings (JSON) file.
-2. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields must be added: 
+     ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
+
+3. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields must be added: 
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
@@ -28,15 +30,23 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 
 For example:
 
+![Screenshot_31](https://github.com/industrian/commercetools-rest-client/assets/77231096/9ed1f03b-415a-4c70-a4a9-a119b40552a0)
 
 You can define multiple Projects within the settings file. These Projects can then be switched by clicking the Switch REST Client Environment button.
+
+![Screenshot_36](https://github.com/industrian/commercetools-rest-client/assets/77231096/83d0f706-96d3-4c9f-b641-a50dba1b9622)
+
 
 # Making API calls
 
 Each API call is within a dedicated .http file, nested under folders representing the resource. Update actions are also within a dedicated folder.
 
-At the beginning of every file is an Authentication call. You must make ths call first. It will get and save the bearer token.
+At the beginning of every file is an Authentication call. You must make ths call first as it will get and save the bearer token to use in the actual API call.
 
-Variables used within API calls are defined above the call. You should define these before sending the API request. For example, in the following you must add a `category-id` and `category-version`. Strings should not be enclosed in quotation marks.
+Variables used within API calls are defined above the call. You should define these before sending the API request. For example, in the following you must add a `category-id` and `category-version`. Strings should not be enclosed in quotation marks. For example:
+
+![Screenshot_37](https://github.com/industrian/commercetools-rest-client/assets/77231096/be5e5869-3be4-4b63-b865-1bb894b12f9e)
 
 In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but you should remove them if you do not need them. Sending an empty query parameter will probably break the API call.
+
+![image](https://github.com/industrian/commercetools-rest-client/assets/77231096/74ead7cc-714b-416e-ac41-c7e64c820f92)
