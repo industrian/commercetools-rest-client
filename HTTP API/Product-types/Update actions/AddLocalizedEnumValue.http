@@ -1,0 +1,32 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddLocalizedEnumValue
+@product-type-id = 
+@product-type-version = 
+
+POST https://{{host}}/{{project-key}}/product-types/{{product-type-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-type-version}},
+    "actions": [
+        {
+            "action" : "addLocalizedEnumValue",
+            "attributeName" : "your-attribute-name",
+            "value" : {
+              "key" : "New localized enum key",
+              "label" : {
+                "en" : "New English enum label",
+                "de" : "New German enum label"
+              }
+            }
+          }
+    ]
+}
+

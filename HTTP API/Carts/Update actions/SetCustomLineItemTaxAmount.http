@@ -1,0 +1,37 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetCustomLineItemTaxAmount
+@cart-id = 
+@cart-version = 
+@customLineItemId = 
+
+POST https://{{host}}/{{project-key}}/carts/{{cart-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "setCustomLineItemTaxAmount",
+            "customLineItemId" : "{{customLineItemId}}",
+            "externalTaxAmount" : {
+              "totalGross" : {
+                "centAmount" : 2000000,
+                "currencyCode" : "EUR"
+              },
+              "taxRate" : {
+                "name" : "myTaxRate",
+                "amount" : 0.19,
+                "country" : "DE"
+              }
+            }
+          }
+    ]
+}
+

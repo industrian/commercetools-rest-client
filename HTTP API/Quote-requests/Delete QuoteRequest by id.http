@@ -1,0 +1,14 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete QuoteRequest by id
+@quote-request-id = 
+@quote-request-version = 
+
+DELETE https://{{host}}/{{project-key}}/quote-requests/{{quote-request-id}}?dataErasure=
+&version={{quote-request-version}}
+&expand=
+Authorization: Bearer {{ctp_access_token}}

@@ -1,0 +1,14 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete DiscountCode by key
+@discount-code-key = 
+@discount-code-version = 
+
+DELETE https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}?dataErasure=
+&version={{discount-code-version}}
+&expand=
+Authorization: Bearer {{ctp_access_token}}

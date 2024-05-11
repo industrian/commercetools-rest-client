@@ -1,0 +1,39 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create ApprovalRule
+@associate-id = 
+@business-unit-key = 
+
+POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/approval-rules?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : "my approval rule",
+  "status" : "Inactive",
+  "predicate" : "totalPrice.centAmount >= 100000",
+  "approvers" : {
+    "tiers" : [ {
+      "and" : [ {
+        "or" : [ {
+          "associateRole" : {
+            "typeId" : "associate-role",
+            "key" : "project-team-lead"
+          }
+        }, {
+          "associateRole" : {
+            "typeId" : "associate-role",
+            "key" : "project-team-lead-substitute"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "requesters" : [ {
+    "associateRole" : {
+      "typeId" : "associate-role",
+      "key" : "project-manager"
+    }
+  } ]
+}

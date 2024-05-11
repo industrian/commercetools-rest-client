@@ -1,0 +1,34 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetLineItemShippingDetails
+@store-key = 
+@cart-id = 
+@cart-version = 
+@lineItemId = 
+@addressKey = 
+
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "setLineItemShippingDetails",
+            "lineItemId" : "{{lineItemId}}",
+            "shippingDetails" : {
+              "targets" : [ {
+                "addressKey" : "{{addressKey}}",
+                "quantity" : 1
+              } ]
+            }
+          }
+    ]
+}
+

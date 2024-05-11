@@ -1,0 +1,51 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddShippingMethod
+@associate-id = 
+@business-unit-key = 
+@cart-id = 
+@cart-version = 
+@shipping-method-id = 
+
+POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/{{cart-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "addShippingMethod",
+            "shippingKey" : "shippingMethodKey1",
+            "shippingMethod" : {
+              "id" : "{{shipping-method-id}}",
+              "typeId" : "shipping-method"
+            },
+            "shippingAddress" : {
+              "key" : "exampleKey",
+              "streetName" : "Example Street",
+              "streetNumber" : "4711",
+              "postalCode" : "80933",
+              "city" : "Exemplary City",
+              "region" : "Exemplary Region",
+              "state" : "Exemplary State",
+              "country" : "DE"
+            },
+            "shippingRateInput" : {
+              "type" : "Classification",
+              "key" : "shippingRateString"
+            },
+            "externalTaxRate" : {
+              "name" : "myTaxRate",
+              "amount" : 0.19,
+              "country" : "DE"
+            }
+          }
+    ]
+}
+

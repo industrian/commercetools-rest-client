@@ -1,0 +1,35 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddShippingRate
+@shipping-method-id = 
+@shipping-method-version = 
+@zone-id = 
+
+POST https://{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{shipping-method-version}},
+    "actions": [
+        {
+            "action" : "addShippingRate",
+            "zone" : {
+              "typeId" : "zone",
+              "id" : "{{zone-id}}"
+            },
+            "shippingRate" : {
+              "price" : {
+                "currencyCode" : "EUR",
+                "centAmount" : 4000
+              }
+            }
+          }
+    ]
+}
+

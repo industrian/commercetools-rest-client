@@ -1,0 +1,18 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create TaxCategory
+
+POST https://{{host}}/{{project-key}}/tax-categories?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : "test-tax-category",
+  "rates" : [ {
+    "name" : "test-tax-category",
+    "amount" : 0.2,
+    "includedInPrice" : true,
+    "country" : "DE"
+  } ]
+}

@@ -1,0 +1,14 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create my order in store
+@store-key = 
+
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "id" : "7c2e2694-aefe-43d7-888e-6a99514caaca",
+  "version" : 10
+}

@@ -1,0 +1,15 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Customer
+
+POST https://{{host}}/{{project-key}}/customers?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "email" : "johndoe@example.com",
+  "firstName" : "John",
+  "lastName" : "Doe",
+  "password" : "secret123"
+}

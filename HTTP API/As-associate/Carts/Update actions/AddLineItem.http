@@ -1,0 +1,52 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddLineItem
+@associate-id = 
+@business-unit-key = 
+@cart-id = 
+@cart-version = 
+@product-id = 
+@channel-id = 
+@channel-id = 
+
+POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/{{cart-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "addLineItem",
+            "productId" : "{{product-id}}",
+            "variantId" : 2,
+            "quantity" : 1,
+            "supplyChannel" : {
+              "typeId" : "channel",
+              "id" : "{{channel-id}}"
+            },
+            "distributionChannel" : {
+              "typeId" : "channel",
+              "id" : "{{channel-id}}"
+            },
+            "externalTaxRate" : {
+              "name" : "StandardExternalTaxRate",
+              "amount" : 0.19,
+              "country" : "DE",
+              "state" : "Bavaria"
+            },
+            "shippingDetails" : {
+              "targets" : [ {
+                "addressKey" : "AddressKeyStringFromAddress",
+                "quantity" : 2
+              } ]
+            }
+          }
+    ]
+}
+

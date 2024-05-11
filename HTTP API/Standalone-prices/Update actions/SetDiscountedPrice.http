@@ -1,0 +1,37 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetDiscountedPrice
+@standalone-price-id = 
+@standalone-price-version = 
+@product-discount-id = 
+
+POST https://{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{standalone-price-version}},
+    "actions": [
+        {
+            "action" : "setDiscountedPrice",
+            "discounted" : {
+              "value" : {
+                "type" : "centPrecision",
+                "currencyCode" : "EUR",
+                "centAmount" : 2990,
+                "fractionDigits" : 2
+              },
+              "discount" : {
+                "typeId" : "product-discount",
+                "id" : "{{product-discount-id}}"
+              }
+            }
+          }
+    ]
+}
+

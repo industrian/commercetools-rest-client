@@ -1,0 +1,27 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeName
+@attribute-group-id = 
+@attribute-group-version = 
+
+POST https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{attribute-group-version}},
+    "actions": [
+        {
+            "action" : "changeName",
+            "name" : {
+              "en" : "Attribute Group"
+            }
+          }
+    ]
+}
+

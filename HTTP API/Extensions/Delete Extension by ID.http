@@ -1,0 +1,12 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete Extension by ID
+@extension-id = 
+@extension-version = 
+
+DELETE https://{{host}}/{{project-key}}/extensions/{{extension-id}}?version={{extension-version}}
+Authorization: Bearer {{ctp_access_token}}

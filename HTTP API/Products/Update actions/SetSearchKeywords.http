@@ -1,0 +1,41 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetSearchKeywords
+@product-id = 
+@product-version = 
+
+POST https://{{host}}/{{project-key}}/products/{{product-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-version}},
+    "actions": [
+        {
+            "action" : "setSearchKeywords",
+            "searchKeywords" : {
+              "en" : [ {
+                "text" : "Super Keyword"
+              }, {
+                "text" : "What a keyword",
+                "suggestTokenizer" : {
+                  "type" : "whitespace"
+                }
+              } ],
+              "de" : [ {
+                "text" : "Ein super Schlüsselwort",
+                "suggestTokenizer" : {
+                  "type" : "custom",
+                  "inputs" : [ "wow wow wow", "super genial", "der Wahnsinn" ]
+                }
+              } ]
+            }
+          }
+    ]
+}
+

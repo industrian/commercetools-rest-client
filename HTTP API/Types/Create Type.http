@@ -1,0 +1,30 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Type
+
+POST https://{{host}}/{{project-key}}/types?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "key" : "lineitemtype",
+  "name" : {
+    "en" : "lineitem"
+  },
+  "description" : {
+    "en" : "description"
+  },
+  "resourceTypeIds" : [ "line-item" ],
+  "fieldDefinitions" : [ {
+    "name" : "offer_name",
+    "label" : {
+      "en" : "offer_name"
+    },
+    "required" : false,
+    "type" : {
+      "name" : "String"
+    },
+    "inputHint" : "SingleLine"
+  } ]
+}

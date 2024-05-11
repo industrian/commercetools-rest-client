@@ -1,0 +1,22 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Category
+
+POST https://{{host}}/{{project-key}}/categories?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : {
+    "en" : "Hats"
+  },
+  "slug" : {
+    "en" : "hats"
+  },
+  "parent" : {
+    "typeId" : "category",
+    "id" : "123456"
+  },
+  "orderHint" : "0.1"
+}

@@ -1,0 +1,26 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create ProductType
+
+POST https://{{host}}/{{project-key}}/product-types?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : "test_product_type",
+  "description" : "Test product type.",
+  "attributes" : [ {
+    "type" : {
+      "name" : "text"
+    },
+    "isSearchable" : false,
+    "inputHint" : "SingleLine",
+    "name" : "size",
+    "label" : {
+      "en" : "The right size is important."
+    },
+    "isRequired" : false,
+    "attributeConstraint" : "CombinationUnique"
+  } ]
+}

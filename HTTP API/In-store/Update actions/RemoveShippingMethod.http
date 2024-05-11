@@ -1,0 +1,20 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### RemoveShippingMethod
+@store-key = 
+@cart-id = 
+
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}?expand=
+Authorization: Bearer {{ctp_access_token}}{
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "removeShippingMethod",
+            "shippingKey" : "shippingMethodKey1"
+          }
+    ]
+}

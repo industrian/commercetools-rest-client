@@ -1,0 +1,28 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetImageLabel
+@product-id = 
+@product-version = 
+
+POST https://{{host}}/{{project-key}}/products/{{product-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-version}},
+    "actions": [
+        {
+            "action" : "setImageLabel",
+            "variantId" : 2,
+            "imageUrl" : "//image.png",
+            "label" : "labelString",
+            "staged" : true
+          }
+    ]
+}
+

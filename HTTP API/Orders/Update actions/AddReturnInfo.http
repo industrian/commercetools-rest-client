@@ -1,0 +1,30 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddReturnInfo
+@order-id = 
+@order-version = 
+@lineItemId = 
+
+POST https://{{host}}/{{project-key}}/orders/{{order-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{order-version}},
+    "actions": [
+        {
+            "action" : "addReturnInfo",
+            "items" : [ {
+              "quantity" : 1,
+              "lineItemId" : "{{lineItemId}}",
+              "shipmentState" : "Returned"
+            } ]
+          }
+    ]
+}
+

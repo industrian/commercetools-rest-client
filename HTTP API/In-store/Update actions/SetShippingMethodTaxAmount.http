@@ -1,0 +1,31 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetShippingMethodTaxAmount
+@store-key = 
+@cart-id = 
+
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}?expand=
+Authorization: Bearer {{ctp_access_token}}{
+    "version": {{cart-version}},
+    "actions": [
+        {
+            "action" : "setShippingMethodTaxAmount",
+            "shippingKey" : "shipping-method-key",
+            "externalTaxAmount" : {
+              "totalGross" : {
+                "centAmount" : 2000000,
+                "currencyCode" : "EUR"
+              },
+              "taxRate" : {
+                "name" : "myTaxRate",
+                "amount" : 0.19,
+                "country" : "DE"
+              }
+            }
+          }
+    ]
+}

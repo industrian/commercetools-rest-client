@@ -1,0 +1,29 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeProductSelectionActive
+@store-id = 
+@store-version = 
+
+POST https://{{host}}/{{project-key}}/stores/{{store-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{store-version}},
+    "actions": [
+        {
+            "action" : "changeProductSelectionActive",
+            "productSelection" : {
+              "typeId" : "product-selection",
+              "id" : "e7ba4555-b1bb-483d-92d8-2c4a10778427"
+            },
+            "active" : true
+          }
+    ]
+}
+

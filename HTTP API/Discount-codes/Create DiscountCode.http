@@ -1,0 +1,21 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create DiscountCode
+
+POST https://{{host}}/{{project-key}}/discount-codes?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "code" : "SAVE10",
+  "name" : {
+    "en" : "Save10"
+  },
+  "cartDiscounts" : [ {
+    "typeId" : "cart-discount",
+    "id" : "fdbaf4ea-fbc9-4fea-bac4-1d7e6c1995b3"
+  } ],
+  "isActive" : true,
+  "cartPredicate" : "1=1"
+}

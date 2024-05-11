@@ -1,0 +1,34 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetMetaAttributes
+@product-tailoring-id = 
+@product-tailoring-version = 
+
+POST https://{{host}}/{{project-key}}/product-tailoring/{{product-tailoring-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-tailoring-version}},
+    "actions": [
+        {
+            "action" : "setMetaAttributes",
+            "metaTitle" : {
+              "en" : "A Meta Title"
+            },
+            "metaDescription" : {
+              "en" : "A Meta Description"
+            },
+            "metaKeywords" : {
+              "en" : "Meta Keywords"
+            },
+            "staged" : true
+          }
+    ]
+}
+

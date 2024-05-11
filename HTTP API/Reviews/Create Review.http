@@ -1,0 +1,19 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Review
+
+POST https://{{host}}/{{project-key}}/reviews?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "authorName" : "John Doe",
+  "title" : "Incredible",
+  "text" : "Best product ever",
+  "rating" : 5,
+  "target" : {
+    "typeId" : "product",
+    "id" : "8fddacac-6ef5-4e66-af6e-124452123456"
+  }
+}

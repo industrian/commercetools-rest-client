@@ -1,0 +1,15 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete my shopping list by key in store
+@store-key = 
+@shopping-list-key = 
+@shopping-list-version = 
+
+DELETE https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/key={{shopping-list-key}}?expand=
+&dataErasure=
+&version={{shopping-list-version}}
+Authorization: Bearer {{ctp_access_token}}

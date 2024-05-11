@@ -1,0 +1,39 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create ShoppingList
+
+POST https://{{host}}/{{project-key}}/shopping-lists?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : {
+    "en" : "My shopping list"
+  },
+  "slug" : {
+    "en" : "my-shopping-list"
+  },
+  "customer" : {
+    "typeId" : "customer",
+    "id" : "e73cd97f-846e-44a0-b418-3ed044a8e398"
+  },
+  "key" : "my-shopping-list",
+  "deleteDaysAfterLastModification" : 100,
+  "lineItems" : [ {
+    "sku" : "product-variant-sku",
+    "quantity" : 5
+  }, {
+    "productId" : "0e131f46-8d1a-4761-9c83-b45ab5d3501e",
+    "variantId" : 2
+  } ],
+  "textLineItems" : [ {
+    "name" : {
+      "en" : "My shopping list item"
+    },
+    "description" : {
+      "en" : "This is a good gift idea"
+    },
+    "quantity" : 5
+  } ]
+}

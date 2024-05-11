@@ -1,0 +1,18 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get ProductProjection by id
+@product-projection-id = 
+
+GET https://{{host}}/{{project-key}}/product-projections/{{product-projection-id}}?staged=
+&priceCurrency=
+&priceCountry=
+&priceCustomerGroup=
+&priceChannel=
+&localeProjection=
+&storeProjection=
+&expand=
+Authorization: Bearer {{ctp_access_token}}

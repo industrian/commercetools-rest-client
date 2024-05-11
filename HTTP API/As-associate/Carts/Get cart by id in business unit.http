@@ -1,0 +1,13 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get cart by id in business unit
+@associate-id = 
+@business-unit-key = 
+@cart-id = 
+
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/{{cart-id}}?expand=
+Authorization: Bearer {{ctp_access_token}}

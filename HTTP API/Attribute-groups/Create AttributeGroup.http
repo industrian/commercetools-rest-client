@@ -1,0 +1,23 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create AttributeGroup
+
+POST https://{{host}}/{{project-key}}/attribute-groups?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : {
+    "en" : "Sample name"
+  },
+  "description" : {
+    "en" : "Sample description"
+  },
+  "key" : "group-1",
+  "attributes" : [ {
+    "key" : "Attribute 1"
+  }, {
+    "key" : "Attribute 2"
+  } ]
+}

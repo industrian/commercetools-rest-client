@@ -1,0 +1,30 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetTextLineItemDescription
+@shopping-list-id = 
+@shopping-list-version = 
+@lineItemId = 
+
+POST https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{shopping-list-version}},
+    "actions": [
+        {
+            "action" : "setTextLineItemDescription",
+            "textLineItemId" : "{{lineItemId}}",
+            "description" : {
+              "en" : "New description",
+              "de" : "Neue Beschreibung"
+            }
+          }
+    ]
+}
+

@@ -1,0 +1,44 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddParcelToDelivery
+@order-id = 
+@order-version = 
+@deliveryId = 
+@trackingId = 
+@transactionId = 
+@lineItemId = 
+
+POST https://{{host}}/{{project-key}}/orders/{{order-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{order-version}},
+    "actions": [
+        {
+            "action" : "addParcelToDelivery",
+            "deliveryId" : "{{deliveryId}}",
+            "measurements" : {
+              "heightInMillimeter" : 11,
+              "widthInMillimeter" : 11
+            },
+            "trackingData" : {
+              "trackingId" : "{{trackingId}}",
+              "carrier" : "TNT",
+              "provider" : "providerName",
+              "providerTransaction" : "{{transactionId}}",
+              "isReturn" : false
+            },
+            "items" : {
+              "id" : "{{lineItemId}}",
+              "quantity" : 2
+            }
+          }
+    ]
+}
+

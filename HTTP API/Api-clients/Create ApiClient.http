@@ -1,0 +1,15 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create ApiClient
+
+POST https://{{host}}/{{project-key}}/api-clients?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : "api-client-name",
+  "scope" : "view_products:{projectKey}",
+  "accessTokenValiditySeconds" : 3600,
+  "refreshTokenValiditySeconds" : 31536000
+}

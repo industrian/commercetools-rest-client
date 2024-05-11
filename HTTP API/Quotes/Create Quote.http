@@ -1,0 +1,16 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Quote
+
+POST https://{{host}}/{{project-key}}/quotes?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "stagedQuote" : {
+    "typeId" : "staged-quote",
+    "id" : "2a3baa00-44fa-4ab8-bec7-933c31e18dcc"
+  },
+  "stagedQuoteVersion" : 1
+}

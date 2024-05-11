@@ -1,0 +1,35 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Search Orders
+
+POST https://{{host}}/{{project-key}}/orders/search
+Authorization: Bearer {{ctp_access_token}}{
+  "query" : {
+    "and" : [ {
+      "fullText" : {
+        "field" : "customLineItems.name",
+        "language" : "en",
+        "value" : "banana"
+      }
+    }, {
+      "filter" : [ {
+        "exact" : {
+          "field" : "store.name",
+          "language" : "en",
+          "value" : "fruit_store"
+        }
+      } ]
+    } ]
+  },
+  "sort" : [ {
+    "field" : "customLineItems.name",
+    "language" : "en",
+    "order" : "desc"
+  } ],
+  "limit" : 50,
+  "offset" : 0
+}

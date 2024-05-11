@@ -1,0 +1,13 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get Quote by key
+@associate-id = 
+@business-unit-key = 
+@quote-key = 
+
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/quotes/key={{quote-key}}?expand=
+Authorization: Bearer {{ctp_access_token}}

@@ -1,0 +1,29 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetAssetCustomField
+@product-id = 
+@product-version = 
+@assetId = 
+
+POST https://{{host}}/{{project-key}}/products/{{product-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-version}},
+    "actions": [
+        {
+            "action" : "setAssetCustomField",
+            "variantId" : 1,
+            "assetId" : "{{assetId}}",
+            "name" : "ExampleStringTypeField",
+            "value" : "TextString"
+          }
+    ]
+}
+

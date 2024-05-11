@@ -1,0 +1,70 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddDelivery
+@order-id = 
+@order-version = 
+@lineItemId = 
+@trackingId = 
+@transactionId = 
+
+POST https://{{host}}/{{project-key}}/orders/{{order-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{order-version}},
+    "actions": [
+        {
+            "action" : "addDelivery",
+            "items" : [ {
+              "id" : "{{lineItemId}}",
+              "quantity" : 1
+            } ],
+            "address" : {
+              "key" : "exampleKey",
+              "title" : "My Address",
+              "salutation" : "Mr.",
+              "firstName" : "Example",
+              "lastName" : "Person",
+              "streetName" : "Example Street",
+              "streetNumber" : "4711",
+              "additionalStreetInfo" : "Backhouse",
+              "postalCode" : "80933",
+              "city" : "Exemplary City",
+              "region" : "Exemplary Region",
+              "state" : "Exemplary State",
+              "country" : "DE",
+              "company" : "My Company Name",
+              "department" : "Sales",
+              "building" : "Hightower 1",
+              "apartment" : "247",
+              "pOBox" : "2471",
+              "phone" : "+49 89 12345678",
+              "mobile" : "+49 171 2345678",
+              "email" : "email@example.com",
+              "fax" : "+49 89 12345679",
+              "additionalAddressInfo" : "no additional Info",
+              "externalId" : "Information not needed"
+            },
+            "parcels" : [ {
+              "measurements" : {
+                "heightInMillimeter" : 11,
+                "widthInMillimeter" : 11
+              },
+              "trackingData" : {
+                "trackingId" : "{{trackingId}}",
+                "carrier" : "TNT",
+                "provider" : "providerName",
+                "providerTransaction" : "{{transactionId}}",
+                "isReturn" : false
+              }
+            } ]
+          }
+    ]
+}
+

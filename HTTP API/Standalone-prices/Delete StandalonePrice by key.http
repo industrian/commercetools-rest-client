@@ -1,0 +1,13 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete StandalonePrice by key
+@standalone-price-key = 
+@standalone-price-version = 
+
+DELETE https://{{host}}/{{project-key}}/standalone-prices/key={{standalone-price-key}}?version={{standalone-price-version}}
+&expand=
+Authorization: Bearer {{ctp_access_token}}

@@ -1,0 +1,35 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangePlainEnumValueOrder
+@product-type-id = 
+@product-type-version = 
+
+POST https://{{host}}/{{project-key}}/product-types/{{product-type-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-type-version}},
+    "actions": [
+        {
+            "action" : "changePlainEnumValueOrder",
+            "attributeName" : "your-attribute-name",
+            "values" : [ {
+              "key" : "enum key 1",
+              "label" : "enum value 1"
+            }, {
+              "key" : "enum key 2",
+              "label" : "enum value 2"
+            }, {
+              "key" : "enum key 3",
+              "label" : "enum value 3"
+            } ]
+          }
+    ]
+}
+

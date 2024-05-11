@@ -1,0 +1,14 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Delete Order by id
+@order-id = 
+@order-version = 
+
+DELETE https://{{host}}/{{project-key}}/orders/{{order-id}}?dataErasure=
+&version={{order-version}}
+&expand=
+Authorization: Bearer {{ctp_access_token}}

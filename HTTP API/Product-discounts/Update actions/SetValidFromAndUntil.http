@@ -1,0 +1,26 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetValidFromAndUntil
+@product-discount-id = 
+@product-discount-version = 
+
+POST https://{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-discount-version}},
+    "actions": [
+        {
+            "action" : "setValidFromAndUntil",
+            "validFrom" : "2018-10-12T14:00:00.000Z",
+            "validUntil" : "2018-10-12T14:05:00.000Z"
+          }
+    ]
+}
+

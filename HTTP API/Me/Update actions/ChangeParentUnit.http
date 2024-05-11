@@ -1,0 +1,22 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeParentUnit
+@business-unit-id = 
+
+POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}?expand=
+Authorization: Bearer {{ctp_access_token}}{
+    "version": {{business-unit-version}},
+    "actions": [
+        {
+            "action" : "changeParentUnit",
+            "parentUnit" : {
+              "typeId" : "business-unit",
+              "key" : "commercetools"
+            }
+          }
+    ]
+}

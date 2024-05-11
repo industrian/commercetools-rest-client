@@ -1,0 +1,32 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### AddProduct
+@product-selection-id = 
+@product-selection-version = 
+
+POST https://{{host}}/{{project-key}}/product-selections/{{product-selection-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-selection-version}},
+    "actions": [
+        {
+            "action" : "addProduct",
+            "product" : {
+              "typeId" : "product",
+              "key" : "millennium-falcon"
+            },
+            "variantSelection" : {
+              "type" : "includeOnly",
+              "skus" : [ "metallic-white" ]
+            }
+          }
+    ]
+}
+

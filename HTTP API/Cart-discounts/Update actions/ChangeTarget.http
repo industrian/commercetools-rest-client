@@ -1,0 +1,28 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeTarget
+@cart-discount-id = 
+@cart-discount-version = 
+
+POST https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{cart-discount-version}},
+    "actions": [
+        {
+            "action" : "changeTarget",
+            "target" : {
+              "type" : "lineItems",
+              "predicate" : "sku = "myOtherSKU""
+            }
+          }
+    ]
+}
+

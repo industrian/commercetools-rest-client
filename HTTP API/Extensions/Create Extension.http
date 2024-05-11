@@ -1,0 +1,24 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Extension
+
+POST https://{{host}}/{{project-key}}/extensions
+Authorization: Bearer {{ctp_access_token}}{
+  "destination" : {
+    "type" : "HTTP",
+    "url" : "https://example.azurewebsites.net/api/extension",
+    "authentication" : {
+      "type" : "AzureFunctions",
+      "key" : "some-azure-function-code"
+    }
+  },
+  "triggers" : [ {
+    "resourceTypeId" : "cart",
+    "actions" : [ "Create", "Update" ]
+  } ],
+  "key" : "my-extension"
+}

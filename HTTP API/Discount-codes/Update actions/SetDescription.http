@@ -1,0 +1,28 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetDescription
+@discount-code-id = 
+@discount-code-version = 
+
+POST https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{discount-code-version}},
+    "actions": [
+        {
+            "action" : "setDescription",
+            "description" : {
+              "en" : "New Description EN",
+              "de" : "New Description DE"
+            }
+          }
+    ]
+}
+

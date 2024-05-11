@@ -1,0 +1,34 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### SetAddressCustomType
+@customer-id = 
+@customer-version = 
+@type-id = 
+@address-id = 
+
+POST https://{{host}}/{{project-key}}/customers/{{customer-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{customer-version}},
+    "actions": [
+        {
+            "action" : "setAddressCustomType",
+            "type" : {
+              "id" : "{{type-id}}",
+              "typeId" : "type"
+            },
+            "fields" : {
+              "exampleStringTypeField" : "TextString"
+            },
+            "addressId" : "{{address-id}}"
+          }
+    ]
+}
+

@@ -1,0 +1,11 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get StandalonePrice by id
+@standalone-price-id = 
+
+GET https://{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}?expand=
+Authorization: Bearer {{ctp_access_token}}

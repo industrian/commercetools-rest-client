@@ -1,0 +1,29 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeLabel
+@type-id = 
+@type-version = 
+
+POST https://{{host}}/{{project-key}}/types/{{type-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{type-version}},
+    "actions": [
+        {
+            "action" : "changeLabel",
+            "fieldName" : "CustomTextField",
+            "label" : {
+              "de" : "NewLabelDE",
+              "en" : "NewLabelEN"
+            }
+          }
+    ]
+}
+

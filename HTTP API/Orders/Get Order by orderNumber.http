@@ -1,0 +1,11 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get Order by orderNumber
+@order-number = 
+
+GET https://{{host}}/{{project-key}}/orders/order-number={{order-number}}?expand=
+Authorization: Bearer {{ctp_access_token}}

@@ -1,0 +1,44 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### ChangeLocalizedEnumValueOrder
+@product-type-id = 
+@product-type-version = 
+
+POST https://{{host}}/{{project-key}}/product-types/{{product-type-id}}
+Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
+
+    
+    {
+    "version": {{product-type-version}},
+    "actions": [
+        {
+            "action" : "changeLocalizedEnumValueOrder",
+            "attributeName" : "your-attribute-name",
+            "values" : [ {
+              "key" : "localized enum key 1",
+              "label" : {
+                "en" : "English label for enum key 1",
+                "de" : "German label for enum key 1"
+              }
+            }, {
+              "key" : "localized enum key 2",
+              "label" : {
+                "en" : "English label for enum key 2",
+                "de" : "German label for enum key 2"
+              }
+            }, {
+              "key" : "localized enum key 3",
+              "label" : {
+                "en" : "English label for enum key 3",
+                "de" : "German label for enum key 3"
+              }
+            } ]
+          }
+    ]
+}
+

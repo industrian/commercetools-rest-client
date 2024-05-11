@@ -1,0 +1,57 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create Product
+
+POST https://{{host}}/{{project-key}}/products?priceCurrency=
+&priceCountry=
+&priceCustomerGroup=
+&priceChannel=
+&localeProjection=
+&expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "productType" : {
+    "id" : "24f510c3-f334-4099-94e2-d6224a8eb919",
+    "typeId" : "product-type"
+  },
+  "categories" : [ {
+    "typeId" : "category",
+    "id" : "24f510c3-f334-4099-94e2-d6224a8eb919"
+  } ],
+  "name" : {
+    "en" : "Some Product"
+  },
+  "slug" : {
+    "en" : "product_slug_<random-uuid>"
+  },
+  "masterVariant" : {
+    "sku" : "SKU-1",
+    "prices" : [ {
+      "value" : {
+        "currencyCode" : "EUR",
+        "centAmount" : 4200
+      }
+    } ],
+    "images" : [ {
+      "url" : "http://my.custom.cdn.net/master.png",
+      "label" : "Master Image",
+      "dimensions" : {
+        "w" : 303,
+        "h" : 197
+      }
+    } ]
+  },
+  "variants" : [ {
+    "images" : [ {
+      "url" : "http://my.custom.cdn.net/variant.png",
+      "label" : "Variant Image",
+      "dimensions" : {
+        "w" : 303,
+        "h" : 197
+      }
+    } ]
+  } ]
+}

@@ -1,0 +1,18 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Query quote-requests
+@associate-id = 
+@business-unit-key = 
+
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/quote-requests?expand=
+&sort=
+&limit=
+&offset=
+&withTotal=
+&where=
+&/^var[.][a-zA-Z0-9]+$/=
+Authorization: Bearer {{ctp_access_token}}

@@ -1,0 +1,29 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Create CartDiscount
+
+POST https://{{host}}/{{project-key}}/cart-discounts?expand=
+Authorization: Bearer {{ctp_access_token}}{
+  "name" : {
+    "en" : "Summer Sale"
+  },
+  "value" : {
+    "type" : "relative",
+    "permyriad" : 1000
+  },
+  "cartPredicate" : "1=1",
+  "target" : {
+    "type" : "lineItems",
+    "predicate" : "1=1"
+  },
+  "sortOrder" : "0.1",
+  "stores" : [ {
+    "key" : "{{store-key}}"
+  } ],
+  "isActive" : true,
+  "requiresDiscountCode" : false
+}
