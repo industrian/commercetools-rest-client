@@ -20,7 +20,7 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 1. Open your Visual Studio Code User Settings (JSON) file.
      ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
 
-3. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields must be added: 
+3. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
