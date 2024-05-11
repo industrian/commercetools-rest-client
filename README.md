@@ -1,6 +1,6 @@
 # commercetools-rest-client
 
-This repository contains .http files which you can use to interact with commercetools Composable Commerce APIs using the REST Client extension for Visual Studio Code.
+This repository contains .http files which you can use to interact with commercetools Composable Commerce APIs using the [REST Client extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client.
 
 # Disclaimer
 
