@@ -1,0 +1,37 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/product-types/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "product-type",
+  "resources" : [ {
+    "key" : "sample",
+    "name" : "test_product_type",
+    "description" : "Test product type.",
+    "attributes" : [ {
+      "name" : "product-ref-attribute",
+      "label" : {
+        "en" : "selling product"
+      },
+      "isRequired" : false,
+      "isSearchable" : false,
+      "type" : {
+        "name" : "reference",
+        "referenceTypeId" : "category"
+      },
+      "attributeConstraint" : "Unique",
+      "inputTip" : {
+        "en" : "product input tip"
+      },
+      "inputHint" : "SingleLine"
+    } ]
+  } ]
+}

@@ -1,0 +1,63 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/product-variant-patches/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "product-variant-patch",
+  "patches" : [ {
+    "productVariant" : {
+      "typeId" : "product-variant",
+      "key" : "red-t-shirt"
+    },
+    "attributes" : {
+      "attribute-to-update" : {
+        "type" : "boolean",
+        "value" : true
+      },
+      "name-of-attribute-to-delete" : {
+        "annotations" : [ ],
+        "value" : null
+      },
+      "name-of-localized-attribute-to-update" : {
+        "type" : "ltext",
+        "value" : {
+          "en" : "Existing field",
+          "es" : {
+            "annotations" : [ ],
+            "value" : null
+          },
+          "de" : "Updating field"
+        }
+      },
+      "name-of-localized-attribute-set-to-update" : {
+        "type" : "ltext-set",
+        "value" : [ {
+          "en" : "Existing field",
+          "es" : {
+            "annotations" : [ ],
+            "value" : null
+          },
+          "de" : "Updating field",
+          "br" : "New field"
+        }, {
+          "en" : "Another Existing field",
+          "es" : {
+            "annotations" : [ ],
+            "value" : null
+          },
+          "de" : "Another Updating field",
+          "br" : "Another New field"
+        } ]
+      }
+    },
+    "staged" : false
+  } ]
+}

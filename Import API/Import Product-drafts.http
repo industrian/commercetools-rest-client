@@ -1,0 +1,47 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/product-drafts/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "product-draft",
+  "resources" : [ {
+    "key" : "product-draft-key",
+    "name" : {
+      "en" : "blue shirt"
+    },
+    "slug" : {
+      "en" : "blue-t-shirt"
+    },
+    "productType" : {
+      "typeId" : "product-type",
+      "key" : "sample"
+    },
+    "masterVariant" : {
+      "key" : "master-variant-key",
+      "attributes" : [ {
+        "type" : "reference",
+        "name" : "product-ref-attribute",
+        "value" : {
+          "key" : "greatTestCat",
+          "typeId" : "category"
+        }
+      }, {
+        "type" : "reference",
+        "name" : "product-custom-object-ref-attribute",
+        "value" : {
+          "key" : "custom-object-key",
+          "container" : "custom-object-container-key",
+          "typeId" : "key-value-document"
+        }
+      } ]
+    }
+  } ]
+}

@@ -1,0 +1,41 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/inventories/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "inventory",
+  "resources" : [ {
+    "key" : "inventory-import-key",
+    "sku" : "product-variant-sku",
+    "quantityOnStock" : 15,
+    "restockableInDays" : 2,
+    "expectedDelivery" : "2022-06-30T14:00:00.000Z",
+    "supplyChannel" : {
+      "typeId" : "channel",
+      "key" : "channel-key"
+    },
+    "custom" : {
+      "type" : {
+        "typeId" : "type",
+        "key" : "custom-field-key"
+      },
+      "fields" : {
+        "theNameofTheInventoryCustomField" : {
+          "type" : "LocalizedString",
+          "value" : {
+            "en" : "English text",
+            "de" : "German text"
+          }
+        }
+      }
+    }
+  } ]
+}

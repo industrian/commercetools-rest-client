@@ -1,0 +1,66 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/customers/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "customer",
+  "resources" : [ {
+    "customerNumber" : "12345",
+    "email" : "alice@example.com",
+    "password" : "secret",
+    "firstName" : "Alice",
+    "lastName" : "Doe",
+    "middleName" : "Ruth",
+    "title" : "Ms.",
+    "dateOfBirth" : "1980-01-01",
+    "companyName" : "commercetools GmbH",
+    "vatId" : "123456789",
+    "addresses" : [ {
+      "key" : "wCVKP6iU",
+      "firstName" : "Alice",
+      "country" : "DE"
+    }, {
+      "key" : "en-wcvK6",
+      "firstName" : "Alice",
+      "country" : "US"
+    } ],
+    "defaultShippingAddress" : 0,
+    "shippingAddresses" : [ 0, 1 ],
+    "defaultBillingAddress" : 0,
+    "billingAddresses" : [ 0, 1 ],
+    "isEmailVerified" : false,
+    "externalId" : "external-id-123",
+    "customerGroup" : {
+      "typeId" : "customer-group",
+      "key" : "customer-group-key"
+    },
+    "custom" : {
+      "type" : {
+        "key" : "custom-type",
+        "typeId" : "type"
+      },
+      "fields" : {
+        "boolean-field" : {
+          "type" : "Boolean",
+          "value" : true
+        }
+      }
+    },
+    "locale" : "DE",
+    "salutation" : "Dr.",
+    "key" : "customer-import-resource-key",
+    "stores" : [ {
+      "typeId" : "store",
+      "key" : "store-key"
+    } ],
+    "authenticationMode" : "Password"
+  } ]
+}

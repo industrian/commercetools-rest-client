@@ -1,0 +1,11 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Get import-container
+@import-container-key = 
+
+GET https://{{host}}/{{project-key}}/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}

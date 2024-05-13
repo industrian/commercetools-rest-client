@@ -1,0 +1,51 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/product-variants/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "product-variant",
+  "resources" : [ {
+    "key" : "red-t-shirt",
+    "sku" : "red-t-shirt",
+    "product" : {
+      "key" : "t-shirt",
+      "typeId" : "product"
+    },
+    "isMasterVariant" : true,
+    "attributes" : [ {
+      "name" : "new",
+      "type" : "boolean",
+      "value" : true
+    }, {
+      "name" : "weight",
+      "type" : "number",
+      "value" : 12.5
+    } ],
+    "assets" : [ {
+      "id" : "uuid-kafar7545792sd6r",
+      "key" : "uuid-kafar7545792sd6r",
+      "sources" : [ {
+        "uri" : "http://www.example.com"
+      } ],
+      "name" : {
+        "en" : "asset name"
+      }
+    } ],
+    "images" : [ {
+      "url" : "https://www.commercetools.com/cli/data/253234387_1.jpg",
+      "dimensions" : {
+        "w" : 1400,
+        "h" : 1400
+      },
+      "label" : "tank top image Font"
+    } ]
+  } ]
+}

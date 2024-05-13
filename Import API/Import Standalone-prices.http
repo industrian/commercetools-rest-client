@@ -1,0 +1,24 @@
+### Authentication
+    # @name auth
+    POST https://{{client_id}}:{{client_secret}}@{{auth_url}}/oauth/token?grant_type=client_credentials&scope={{scopes}}
+    
+    @ctp_access_token = {{auth.response.body.access_token}}
+
+### Import import-container
+@import-container-key = 
+
+POST https://{{host}}/{{project-key}}/standalone-prices/import-containers/{{import-container-key}}
+Authorization: Bearer {{ctp_access_token}}
+
+{
+  "type" : "standalone-price",
+  "resources" : [ {
+    "key" : "priceKey",
+    "sku" : "variantSku",
+    "value" : {
+      "type" : "centPrecision",
+      "currencyCode" : "EUR",
+      "centAmount" : 100
+    }
+  } ]
+}
