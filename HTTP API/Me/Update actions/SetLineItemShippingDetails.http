@@ -6,6 +6,9 @@
 
 ### SetLineItemShippingDetails
 @cart-id = 
+@cart-version = 
+@lineItemId = 
+@addressKey = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

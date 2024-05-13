@@ -7,6 +7,9 @@
 ### SetDeliveryAddressCustomType
 @store-key = 
 @order-id = 
+@order-version = 
+@delivery-id = 
+@type-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

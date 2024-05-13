@@ -6,6 +6,8 @@
 
 ### RemoveDiscountCode
 @cart-id = 
+@cart-version = 
+@discount-code-id = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

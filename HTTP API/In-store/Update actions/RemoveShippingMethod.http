@@ -7,6 +7,7 @@
 ### RemoveShippingMethod
 @store-key = 
 @cart-id = 
+@cart-version = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
 #?expand=

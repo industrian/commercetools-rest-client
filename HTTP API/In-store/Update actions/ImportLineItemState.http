@@ -7,6 +7,9 @@
 ### ImportLineItemState
 @store-key = 
 @order-id = 
+@order-version = 
+@lineItemId = 
+@state-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

@@ -7,6 +7,9 @@
 ### SetAddressCustomType
 @associate-id = 
 @business-unit-id = 
+@business-unit-version = 
+@type-id = 
+@address-id = 
 
 POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/business-units/{{business-unit-id}}
 #?expand=

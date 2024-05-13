@@ -6,6 +6,8 @@
 
 ### AddPayment
 @cart-id = 
+@cart-version = 
+@payment-id = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

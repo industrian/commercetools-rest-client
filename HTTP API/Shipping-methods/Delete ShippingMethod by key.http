@@ -6,7 +6,6 @@
 
 ### Delete ShippingMethod by key
 @shipping-method-key = 
-@shipping-method-version = 
 
 DELETE https://{{host}}/{{project-key}}/shipping-methods/key={{shipping-method-key}}
 #?version={{shipping-method-version}}

@@ -7,6 +7,8 @@
 ### SetCustomerGroup
 @store-key = 
 @customer-id = 
+@customer-version = 
+@customer-group-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=

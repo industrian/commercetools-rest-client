@@ -6,6 +6,7 @@
 
 ### CancelQuoteRequest
 @quote-request-id = 
+@quote-request-version = 
 
 POST https://{{host}}/{{project-key}}/me/quote-requests/{{quote-request-id}}
 #?expand=

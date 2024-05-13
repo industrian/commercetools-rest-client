@@ -7,6 +7,8 @@
 ### SetStores
 @store-key = 
 @customer-id = 
+@customer-version = 
+@store-key = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=

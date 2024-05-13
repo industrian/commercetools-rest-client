@@ -7,6 +7,9 @@
 ### SetItemShippingAddressCustomType
 @store-key = 
 @order-id = 
+@order-version = 
+@address-key = 
+@type-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

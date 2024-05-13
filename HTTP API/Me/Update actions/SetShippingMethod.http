@@ -6,6 +6,8 @@
 
 ### SetShippingMethod
 @cart-id = 
+@cart-version = 
+@shipping-method-id = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

@@ -6,7 +6,6 @@
 
 ### Delete CartDiscount by id
 @cart-discount-id = 
-@cart-discount-version = 
 
 DELETE https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}
 #?version={{cart-discount-version}}

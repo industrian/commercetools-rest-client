@@ -6,6 +6,7 @@
 
 ### ChangeName
 @shopping-list-id = 
+@shopping-list-version = 
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=

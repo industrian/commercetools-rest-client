@@ -7,6 +7,10 @@
 ### AddDelivery
 @store-key = 
 @order-id = 
+@order-version = 
+@lineItemId = 
+@trackingId = 
+@transactionId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

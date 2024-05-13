@@ -6,7 +6,6 @@
 
 ### Delete Order by orderNumber
 @order-number = 
-@order-version = 
 
 DELETE https://{{host}}/{{project-key}}/orders/order-number={{order-number}}
 #?dataErasure=

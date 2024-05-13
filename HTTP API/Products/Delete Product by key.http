@@ -6,7 +6,6 @@
 
 ### Delete Product by key
 @product-key = 
-@product-version = 
 
 DELETE https://{{host}}/{{project-key}}/products/key={{product-key}}
 #?priceCurrency=

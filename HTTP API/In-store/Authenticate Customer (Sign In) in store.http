@@ -6,6 +6,7 @@
 
 ### Authenticate Customer (Sign In) in store
 @store-key = 
+@cart-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/login
 Authorization: Bearer {{ctp_access_token}}

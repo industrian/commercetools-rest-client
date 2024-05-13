@@ -7,6 +7,9 @@
 ### SetCustomLineItemShippingDetails
 @store-key = 
 @order-id = 
+@order-version = 
+@customLineItemId = 
+@addressKey = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

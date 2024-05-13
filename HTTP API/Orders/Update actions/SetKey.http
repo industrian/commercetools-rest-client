@@ -6,6 +6,7 @@
 
 ### SetKey
 @edit-id = 
+@edit-version = 
 
 POST https://{{host}}/{{project-key}}/orders/edits/{{edit-id}}
 #?expand=

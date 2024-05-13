@@ -6,7 +6,6 @@
 
 ### Delete Quote by id
 @quote-id = 
-@quote-version = 
 
 DELETE https://{{host}}/{{project-key}}/quotes/{{quote-id}}
 #?dataErasure=

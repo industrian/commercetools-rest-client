@@ -5,6 +5,7 @@
     @ctp_access_token = {{auth.response.body.access_token}}
 
 ### Create CartDiscount
+@store-key = 
 
 POST https://{{host}}/{{project-key}}/cart-discounts
 #?expand=

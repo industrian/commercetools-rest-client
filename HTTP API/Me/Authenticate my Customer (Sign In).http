@@ -5,6 +5,7 @@
     @ctp_access_token = {{auth.response.body.access_token}}
 
 ### Authenticate my Customer (Sign In)
+@cart-id = 
 
 POST https://{{host}}/{{project-key}}/me/login
 Authorization: Bearer {{ctp_access_token}}

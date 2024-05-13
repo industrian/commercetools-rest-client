@@ -6,7 +6,6 @@
 
 ### Delete State by id
 @state-id = 
-@state-version = 
 
 DELETE https://{{host}}/{{project-key}}/states/{{state-id}}
 #?version={{state-version}}

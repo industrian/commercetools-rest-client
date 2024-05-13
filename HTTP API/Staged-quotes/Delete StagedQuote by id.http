@@ -6,7 +6,6 @@
 
 ### Delete StagedQuote by id
 @staged-quote-id = 
-@staged-quote-version = 
 
 DELETE https://{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
 #?dataErasure=

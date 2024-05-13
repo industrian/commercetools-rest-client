@@ -6,7 +6,6 @@
 
 ### Delete Type by key
 @type-key = 
-@type-version = 
 
 DELETE https://{{host}}/{{project-key}}/types/key={{type-key}}
 #?version={{type-version}}

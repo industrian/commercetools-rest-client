@@ -7,7 +7,6 @@
 ### Delete my shopping list by key in store
 @store-key = 
 @shopping-list-key = 
-@shopping-list-version = 
 
 DELETE https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/key={{shopping-list-key}}
 #?expand=

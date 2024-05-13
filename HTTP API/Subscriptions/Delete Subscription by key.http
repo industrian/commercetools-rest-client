@@ -6,7 +6,6 @@
 
 ### Delete Subscription by key
 @subscription-key = 
-@subscription-version = 
 
 DELETE https://{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
 #?version={{subscription-version}}

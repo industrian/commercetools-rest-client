@@ -6,6 +6,8 @@
 
 ### AddLineItem
 @shopping-list-id = 
+@shopping-list-version = 
+@product-id = 
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=

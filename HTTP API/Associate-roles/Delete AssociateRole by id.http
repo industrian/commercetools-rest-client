@@ -6,7 +6,6 @@
 
 ### Delete AssociateRole by id
 @associate-role-id = 
-@associate-role-version = 
 
 DELETE https://{{host}}/{{project-key}}/associate-roles/{{associate-role-id}}
 #?version={{associate-role-version}}

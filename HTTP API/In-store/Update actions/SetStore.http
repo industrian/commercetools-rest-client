@@ -7,6 +7,8 @@
 ### SetStore
 @store-key = 
 @order-id = 
+@order-version = 
+@store-key = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

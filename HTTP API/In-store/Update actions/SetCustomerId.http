@@ -7,6 +7,8 @@
 ### SetCustomerId
 @store-key = 
 @order-id = 
+@order-version = 
+@customer-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

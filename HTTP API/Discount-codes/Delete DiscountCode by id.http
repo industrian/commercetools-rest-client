@@ -6,7 +6,6 @@
 
 ### Delete DiscountCode by id
 @discount-code-id = 
-@discount-code-version = 
 
 DELETE https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
 #?dataErasure=

@@ -6,6 +6,8 @@
 
 ### RemoveItemShippingAddress
 @cart-id = 
+@cart-version = 
+@addressKey = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

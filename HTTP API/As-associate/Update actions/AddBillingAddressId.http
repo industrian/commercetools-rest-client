@@ -7,6 +7,8 @@
 ### AddBillingAddressId
 @associate-id = 
 @business-unit-id = 
+@business-unit-version = 
+@addressId = 
 
 POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/business-units/{{business-unit-id}}
 #?expand=

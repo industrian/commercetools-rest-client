@@ -6,6 +6,9 @@
 
 ### SetAddressCustomType
 @business-unit-id = 
+@business-unit-version = 
+@type-id = 
+@address-id = 
 
 POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=

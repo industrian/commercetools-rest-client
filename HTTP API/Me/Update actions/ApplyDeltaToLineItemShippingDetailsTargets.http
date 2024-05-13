@@ -6,6 +6,8 @@
 
 ### ApplyDeltaToLineItemShippingDetailsTargets
 @cart-id = 
+@cart-version = 
+@lineItemId = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

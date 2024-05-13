@@ -7,6 +7,9 @@
 ### SetDeliveryItems
 @store-key = 
 @order-id = 
+@order-version = 
+@deliveryId = 
+@itemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

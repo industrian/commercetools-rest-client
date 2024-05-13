@@ -7,6 +7,8 @@
 ### SetCustomLineItemCustomField
 @store-key = 
 @order-id = 
+@order-version = 
+@customLineItemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

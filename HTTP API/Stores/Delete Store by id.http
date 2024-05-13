@@ -6,7 +6,6 @@
 
 ### Delete Store by id
 @store-id = 
-@store-version = 
 
 DELETE https://{{host}}/{{project-key}}/stores/{{store-id}}
 #?version={{store-version}}

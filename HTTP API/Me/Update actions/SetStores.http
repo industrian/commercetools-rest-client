@@ -6,6 +6,8 @@
 
 ### SetStores
 @business-unit-id = 
+@business-unit-version = 
+@store-key = 
 
 POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=

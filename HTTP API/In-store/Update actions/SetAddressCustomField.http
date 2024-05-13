@@ -7,6 +7,8 @@
 ### SetAddressCustomField
 @store-key = 
 @customer-id = 
+@customer-version = 
+@address-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=

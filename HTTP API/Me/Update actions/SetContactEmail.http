@@ -6,6 +6,7 @@
 
 ### SetContactEmail
 @business-unit-id = 
+@business-unit-version = 
 
 POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=

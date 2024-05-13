@@ -6,7 +6,6 @@
 
 ### Delete TaxCategory by key
 @tax-category-key = 
-@tax-category-version = 
 
 DELETE https://{{host}}/{{project-key}}/tax-categories/key={{tax-category-key}}
 #?version={{tax-category-version}}

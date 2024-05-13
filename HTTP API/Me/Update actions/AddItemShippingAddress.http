@@ -6,6 +6,7 @@
 
 ### AddItemShippingAddress
 @cart-id = 
+@cart-version = 
 
 POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=

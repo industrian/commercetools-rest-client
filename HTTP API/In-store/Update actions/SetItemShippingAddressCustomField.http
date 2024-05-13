@@ -7,6 +7,8 @@
 ### SetItemShippingAddressCustomField
 @store-key = 
 @order-id = 
+@order-version = 
+@address-key = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

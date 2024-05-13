@@ -6,6 +6,8 @@
 
 ### SetTextLineItemCustomField
 @shopping-list-id = 
+@shopping-list-version = 
+@lineItemId = 
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=

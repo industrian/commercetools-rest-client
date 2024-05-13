@@ -7,6 +7,8 @@
 ### SetReturnShipmentState
 @store-key = 
 @order-id = 
+@order-version = 
+@returnItemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

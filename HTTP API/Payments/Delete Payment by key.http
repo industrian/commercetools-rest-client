@@ -6,7 +6,6 @@
 
 ### Delete Payment by key
 @payment-key = 
-@payment-version = 
 
 DELETE https://{{host}}/{{project-key}}/payments/key={{payment-key}}
 #?dataErasure=

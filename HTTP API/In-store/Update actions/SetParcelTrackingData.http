@@ -7,6 +7,10 @@
 ### SetParcelTrackingData
 @store-key = 
 @order-id = 
+@order-version = 
+@parcelId = 
+@trackingId = 
+@transactionId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

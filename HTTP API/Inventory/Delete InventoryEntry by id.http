@@ -6,7 +6,6 @@
 
 ### Delete InventoryEntry by id
 @inventory-id = 
-@inventory-version = 
 
 DELETE https://{{host}}/{{project-key}}/inventory/{{inventory-id}}
 #?version={{inventory-version}}

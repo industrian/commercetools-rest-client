@@ -6,6 +6,9 @@
 
 ### ChangeLineItemsOrder
 @shopping-list-id = 
+@shopping-list-version = 
+@lineItemId2 = 
+@lineItemId = 
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=

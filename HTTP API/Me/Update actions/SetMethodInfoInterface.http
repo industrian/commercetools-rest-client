@@ -6,6 +6,7 @@
 
 ### SetMethodInfoInterface
 @payment-id = 
+@payment-version = 
 
 POST https://{{host}}/{{project-key}}/me/payments/{{payment-id}}
 #?expand=

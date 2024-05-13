@@ -7,6 +7,11 @@
 ### AddParcelToDelivery
 @store-key = 
 @order-id = 
+@order-version = 
+@deliveryId = 
+@trackingId = 
+@transactionId = 
+@lineItemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

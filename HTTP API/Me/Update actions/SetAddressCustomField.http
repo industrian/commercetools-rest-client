@@ -6,6 +6,8 @@
 
 ### SetAddressCustomField
 @business-unit-id = 
+@business-unit-version = 
+@address-id = 
 
 POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=

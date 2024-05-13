@@ -6,7 +6,6 @@
 
 ### Delete AttributeGroup by id
 @attribute-group-id = 
-@attribute-group-version = 
 
 DELETE https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
 #?version={{attribute-group-version}}

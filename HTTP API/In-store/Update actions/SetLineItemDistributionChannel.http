@@ -7,6 +7,9 @@
 ### SetLineItemDistributionChannel
 @store-key = 
 @cart-id = 
+@cart-version = 
+@lineItemId = 
+@channel-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
 #?expand=

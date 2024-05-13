@@ -6,6 +6,9 @@
 
 ### SetLineItemCustomType
 @shopping-list-id = 
+@shopping-list-version = 
+@lineItemId = 
+@type-id = 
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=

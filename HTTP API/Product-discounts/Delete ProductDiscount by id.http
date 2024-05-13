@@ -6,7 +6,6 @@
 
 ### Delete ProductDiscount by id
 @product-discount-id = 
-@product-discount-version = 
 
 DELETE https://{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
 #?version={{product-discount-version}}

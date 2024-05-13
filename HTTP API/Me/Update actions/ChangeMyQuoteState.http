@@ -6,6 +6,7 @@
 
 ### ChangeMyQuoteState
 @quote-id = 
+@quote-version = 
 
 POST https://{{host}}/{{project-key}}/me/quotes/{{quote-id}}
 #?expand=

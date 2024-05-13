@@ -7,6 +7,9 @@
 ### SetParcelItems
 @store-key = 
 @order-id = 
+@order-version = 
+@parcelId = 
+@lineItemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

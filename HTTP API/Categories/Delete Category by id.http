@@ -6,7 +6,6 @@
 
 ### Delete Category by id
 @category-id = 
-@category-version = 
 
 DELETE https://{{host}}/{{project-key}}/categories/{{category-id}}
 #?version={{category-version}}

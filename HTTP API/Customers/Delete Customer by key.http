@@ -6,7 +6,6 @@
 
 ### Delete Customer by key
 @customer-key = 
-@customer-version = 
 
 DELETE https://{{host}}/{{project-key}}/customers/key={{customer-key}}
 #?dataErasure=

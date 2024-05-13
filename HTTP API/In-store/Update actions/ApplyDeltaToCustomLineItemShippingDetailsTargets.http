@@ -7,6 +7,8 @@
 ### ApplyDeltaToCustomLineItemShippingDetailsTargets
 @store-key = 
 @cart-id = 
+@cart-version = 
+@customlineItemId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
 #?expand=

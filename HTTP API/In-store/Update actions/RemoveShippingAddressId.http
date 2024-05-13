@@ -7,6 +7,8 @@
 ### RemoveShippingAddressId
 @store-key = 
 @customer-id = 
+@customer-version = 
+@addressId = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=

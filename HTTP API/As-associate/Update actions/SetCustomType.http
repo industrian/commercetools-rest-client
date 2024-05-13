@@ -7,6 +7,8 @@
 ### SetCustomType
 @associate-id = 
 @business-unit-id = 
+@business-unit-version = 
+@type-id = 
 
 POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/business-units/{{business-unit-id}}
 #?expand=

@@ -6,7 +6,6 @@
 
 ### Delete ProductTailoring by key
 @product-tailoring-key = 
-@product-tailoring-version = 
 
 DELETE https://{{host}}/{{project-key}}/product-tailoring/key={{product-tailoring-key}}
 #?version={{product-tailoring-version}}
