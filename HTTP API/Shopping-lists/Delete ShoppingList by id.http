@@ -8,7 +8,8 @@
 @shopping-list-id = 
 @shopping-list-version = 
 
-DELETE https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}?expand=
-&dataErasure=
-&version={{shopping-list-version}}
+DELETE https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+#?expand=
+#&dataErasure=
+#&version={{shopping-list-version}}
 Authorization: Bearer {{ctp_access_token}}

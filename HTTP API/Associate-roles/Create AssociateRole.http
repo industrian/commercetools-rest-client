@@ -6,7 +6,8 @@
 
 ### Create AssociateRole
 
-POST https://{{host}}/{{project-key}}/associate-roles?expand=
+POST https://{{host}}/{{project-key}}/associate-roles
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "key" : "regional-manager",
   "permissions" : [ "ViewMyCarts", "UpdateMyCarts" ]

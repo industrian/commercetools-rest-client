@@ -8,7 +8,8 @@
 @store-key = 
 @order-id = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}?expand=
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
     "version": {{order-version}},
     "actions": [

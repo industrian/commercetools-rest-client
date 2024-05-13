@@ -6,9 +6,10 @@
 
 ### Get ShippingMethods for a location
 
-GET https://{{host}}/{{project-key}}/shipping-methods/matching-location?country=
-&state=
-&currency=
-&expand=
-&sort=
+GET https://{{host}}/{{project-key}}/shipping-methods/matching-location
+#?country=
+#&state=
+#&currency=
+#&expand=
+#&sort=
 Authorization: Bearer {{ctp_access_token}}

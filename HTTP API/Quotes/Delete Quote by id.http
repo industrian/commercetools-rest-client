@@ -8,7 +8,8 @@
 @quote-id = 
 @quote-version = 
 
-DELETE https://{{host}}/{{project-key}}/quotes/{{quote-id}}?dataErasure=
-&version={{quote-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/quotes/{{quote-id}}
+#?dataErasure=
+#&version={{quote-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,9 +7,10 @@
 ### get ByProjectKeyProductSelectionsKeyByKeyProducts
 @product-selection-key = 
 
-GET https://{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}/products?expand=
-&limit=
-&offset=
-&withTotal=
-&sort=
+GET https://{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}/products
+#?expand=
+#&limit=
+#&offset=
+#&withTotal=
+#&sort=
 Authorization: Bearer {{ctp_access_token}}

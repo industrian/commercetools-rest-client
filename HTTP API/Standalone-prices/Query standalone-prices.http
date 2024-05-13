@@ -6,11 +6,12 @@
 
 ### Query standalone-prices
 
-GET https://{{host}}/{{project-key}}/standalone-prices?expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/standalone-prices
+#?expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

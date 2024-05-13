@@ -7,5 +7,6 @@
 ### Get Order by orderNumber
 @order-number = 
 
-GET https://{{host}}/{{project-key}}/orders/order-number={{order-number}}?expand=
+GET https://{{host}}/{{project-key}}/orders/order-number={{order-number}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get ProductSelection by id
 @product-selection-id = 
 
-GET https://{{host}}/{{project-key}}/product-selections/{{product-selection-id}}?expand=
+GET https://{{host}}/{{project-key}}/product-selections/{{product-selection-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

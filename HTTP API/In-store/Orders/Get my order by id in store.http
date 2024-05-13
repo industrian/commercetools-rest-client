@@ -8,5 +8,6 @@
 @store-key = 
 @order-id = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders/{{order-id}}?expand=
+GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders/{{order-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

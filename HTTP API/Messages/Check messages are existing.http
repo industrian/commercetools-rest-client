@@ -6,5 +6,6 @@
 
 ### Check messages are existing
 
-HEAD https://{{host}}/{{project-key}}/messages?where=
+HEAD https://{{host}}/{{project-key}}/messages
+#?where=
 Authorization: Bearer {{ctp_access_token}}

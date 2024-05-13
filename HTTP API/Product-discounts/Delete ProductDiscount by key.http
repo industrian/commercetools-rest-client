@@ -8,6 +8,7 @@
 @product-discount-key = 
 @product-discount-version = 
 
-DELETE https://{{host}}/{{project-key}}/product-discounts/key={{product-discount-key}}?version={{product-discount-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/product-discounts/key={{product-discount-key}}
+#?version={{product-discount-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

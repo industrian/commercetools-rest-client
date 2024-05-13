@@ -7,10 +7,11 @@
 ### Get Product by key
 @product-key = 
 
-GET https://{{host}}/{{project-key}}/products/key={{product-key}}?priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&expand=
+GET https://{{host}}/{{project-key}}/products/key={{product-key}}
+#?priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

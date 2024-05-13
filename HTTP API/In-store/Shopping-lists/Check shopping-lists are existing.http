@@ -7,5 +7,6 @@
 ### Check shopping-lists are existing
 @store-key = 
 
-HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists?where=
+HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists
+#?where=
 Authorization: Bearer {{ctp_access_token}}

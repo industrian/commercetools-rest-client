@@ -6,5 +6,6 @@
 
 ### Check tax-categories are existing
 
-HEAD https://{{host}}/{{project-key}}/tax-categories?where=
+HEAD https://{{host}}/{{project-key}}/tax-categories
+#?where=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get DiscountCode by id
 @discount-code-id = 
 
-GET https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}?expand=
+GET https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

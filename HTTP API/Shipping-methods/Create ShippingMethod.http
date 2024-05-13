@@ -6,7 +6,8 @@
 
 ### Create ShippingMethod
 
-POST https://{{host}}/{{project-key}}/shipping-methods?expand=
+POST https://{{host}}/{{project-key}}/shipping-methods
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "name" : "DHL",
   "localizedDescription" : {

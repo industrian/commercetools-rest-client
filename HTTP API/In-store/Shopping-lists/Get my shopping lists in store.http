@@ -7,11 +7,12 @@
 ### Get my shopping lists in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists?expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists
+#?expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

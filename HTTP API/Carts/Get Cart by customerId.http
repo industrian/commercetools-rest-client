@@ -7,5 +7,6 @@
 ### Get Cart by customerId
 @customer-id = 
 
-GET https://{{host}}/{{project-key}}/carts/customer-id={{customer-id}}?expand=
+GET https://{{host}}/{{project-key}}/carts/customer-id={{customer-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

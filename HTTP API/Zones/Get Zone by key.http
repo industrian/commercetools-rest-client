@@ -7,5 +7,6 @@
 ### Get Zone by key
 @zone-key = 
 
-GET https://{{host}}/{{project-key}}/zones/key={{zone-key}}?expand=
+GET https://{{host}}/{{project-key}}/zones/key={{zone-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

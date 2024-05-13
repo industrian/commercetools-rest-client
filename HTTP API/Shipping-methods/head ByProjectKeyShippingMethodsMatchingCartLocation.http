@@ -6,7 +6,8 @@
 
 ### head ByProjectKeyShippingMethodsMatchingCartLocation
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-cart-location?country=
-&state=
-&cartId=
+HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-cart-location
+#?country=
+#&state=
+#&cartId=
 Authorization: Bearer {{ctp_access_token}}

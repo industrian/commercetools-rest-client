@@ -7,5 +7,6 @@
 ### Check orders are existing
 @store-key = 
 
-HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders?where=
+HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders
+#?where=
 Authorization: Bearer {{ctp_access_token}}

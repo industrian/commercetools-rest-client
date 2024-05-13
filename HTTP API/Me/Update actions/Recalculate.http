@@ -7,7 +7,8 @@
 ### Recalculate
 @cart-id = 
 
-POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}?expand=
+POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
     "version": {{cart-version}},
     "actions": [

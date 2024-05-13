@@ -6,5 +6,6 @@
 
 ### Check payments are existing
 
-HEAD https://{{host}}/{{project-key}}/payments?where=
+HEAD https://{{host}}/{{project-key}}/payments
+#?where=
 Authorization: Bearer {{ctp_access_token}}

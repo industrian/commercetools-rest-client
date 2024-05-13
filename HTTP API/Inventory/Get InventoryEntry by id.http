@@ -7,5 +7,6 @@
 ### Get InventoryEntry by id
 @inventory-id = 
 
-GET https://{{host}}/{{project-key}}/inventory/{{inventory-id}}?expand=
+GET https://{{host}}/{{project-key}}/inventory/{{inventory-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

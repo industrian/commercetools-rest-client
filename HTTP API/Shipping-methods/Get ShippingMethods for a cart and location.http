@@ -6,8 +6,9 @@
 
 ### Get ShippingMethods for a cart and location
 
-GET https://{{host}}/{{project-key}}/shipping-methods/matching-cart-location?country=
-&state=
-&cartId=
-&expand=
+GET https://{{host}}/{{project-key}}/shipping-methods/matching-cart-location
+#?country=
+#&state=
+#&cartId=
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

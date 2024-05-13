@@ -6,16 +6,17 @@
 
 ### Query products
 
-GET https://{{host}}/{{project-key}}/products?where=
-&priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/products
+#?where=
+#&priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

@@ -8,7 +8,8 @@
 @associate-id = 
 @business-unit-id = 
 
-POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/business-units/{{business-unit-id}}?expand=
+POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/business-units/{{business-unit-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
     "version": {{business-unit-version}},
     "actions": [

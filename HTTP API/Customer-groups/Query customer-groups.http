@@ -6,11 +6,12 @@
 
 ### Query customer-groups
 
-GET https://{{host}}/{{project-key}}/customer-groups?where=
-&expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/customer-groups
+#?where=
+#&expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

@@ -8,6 +8,7 @@
 @customer-group-id = 
 @customer-group-version = 
 
-DELETE https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}?version={{customer-group-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}
+#?version={{customer-group-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

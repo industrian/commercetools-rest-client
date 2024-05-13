@@ -8,6 +8,7 @@
 @business-unit-key = 
 @business-unit-version = 
 
-DELETE https://{{host}}/{{project-key}}/business-units/key={{business-unit-key}}?version={{business-unit-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/business-units/key={{business-unit-key}}
+#?version={{business-unit-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,8 @@
 
 ### Create Order
 
-POST https://{{host}}/{{project-key}}/orders?expand=
+POST https://{{host}}/{{project-key}}/orders
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "cart" : {
     "id" : "7c2e2694-aefe-43d7-888e-6a99514caaca",

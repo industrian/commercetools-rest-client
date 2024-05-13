@@ -8,11 +8,12 @@
 @associate-id = 
 @business-unit-key = 
 
-GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts?expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts
+#?expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

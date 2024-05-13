@@ -7,7 +7,8 @@
 ### AddStore
 @business-unit-id = 
 
-POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}?expand=
+POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
     "version": {{business-unit-version}},
     "actions": [

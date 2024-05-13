@@ -8,6 +8,7 @@
 @channel-id = 
 @channel-version = 
 
-DELETE https://{{host}}/{{project-key}}/channels/{{channel-id}}?version={{channel-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/channels/{{channel-id}}
+#?version={{channel-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

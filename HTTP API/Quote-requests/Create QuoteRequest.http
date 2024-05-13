@@ -6,7 +6,8 @@
 
 ### Create QuoteRequest
 
-POST https://{{host}}/{{project-key}}/quote-requests?expand=
+POST https://{{host}}/{{project-key}}/quote-requests
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "cart" : {
     "typeId" : "cart",

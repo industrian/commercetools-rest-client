@@ -7,5 +7,6 @@
 ### Get QuoteRequest by key
 @quote-request-key = 
 
-GET https://{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}?expand=
+GET https://{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get Category by key
 @category-key = 
 
-GET https://{{host}}/{{project-key}}/categories/key={{category-key}}?expand=
+GET https://{{host}}/{{project-key}}/categories/key={{category-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -6,11 +6,12 @@
 
 ### Query cart-discounts
 
-GET https://{{host}}/{{project-key}}/cart-discounts?expand=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/cart-discounts
+#?expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

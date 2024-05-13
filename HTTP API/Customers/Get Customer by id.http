@@ -7,5 +7,6 @@
 ### Get Customer by id
 @customer-id = 
 
-GET https://{{host}}/{{project-key}}/customers/{{customer-id}}?expand=
+GET https://{{host}}/{{project-key}}/customers/{{customer-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

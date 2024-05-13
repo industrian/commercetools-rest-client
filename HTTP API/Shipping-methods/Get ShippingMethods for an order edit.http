@@ -6,7 +6,8 @@
 
 ### Get ShippingMethods for an order edit
 
-GET https://{{host}}/{{project-key}}/shipping-methods/matching-orderedit?orderEditId=
-&country=
-&state=
+GET https://{{host}}/{{project-key}}/shipping-methods/matching-orderedit
+#?orderEditId=
+#&country=
+#&state=
 Authorization: Bearer {{ctp_access_token}}

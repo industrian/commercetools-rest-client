@@ -8,7 +8,8 @@
 @order-id = 
 @order-version = 
 
-DELETE https://{{host}}/{{project-key}}/orders/{{order-id}}?dataErasure=
-&version={{order-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/orders/{{order-id}}
+#?dataErasure=
+#&version={{order-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

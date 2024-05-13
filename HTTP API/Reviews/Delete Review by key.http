@@ -8,7 +8,8 @@
 @review-key = 
 @review-version = 
 
-DELETE https://{{host}}/{{project-key}}/reviews/key={{review-key}}?dataErasure=
-&version={{review-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/reviews/key={{review-key}}
+#?dataErasure=
+#&version={{review-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get CustomerGroup by id
 @customer-group-id = 
 
-GET https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}?expand=
+GET https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

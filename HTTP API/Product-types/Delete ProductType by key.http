@@ -8,6 +8,7 @@
 @product-type-key = 
 @product-type-version = 
 
-DELETE https://{{host}}/{{project-key}}/product-types/key={{product-type-key}}?version={{product-type-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/product-types/key={{product-type-key}}
+#?version={{product-type-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

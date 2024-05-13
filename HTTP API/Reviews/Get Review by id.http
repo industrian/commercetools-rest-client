@@ -7,5 +7,6 @@
 ### Get Review by id
 @review-id = 
 
-GET https://{{host}}/{{project-key}}/reviews/{{review-id}}?expand=
+GET https://{{host}}/{{project-key}}/reviews/{{review-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

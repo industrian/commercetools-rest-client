@@ -7,5 +7,6 @@
 ### Get StagedQuote by key
 @staged-quote-key = 
 
-GET https://{{host}}/{{project-key}}/staged-quotes/key={{staged-quote-key}}?expand=
+GET https://{{host}}/{{project-key}}/staged-quotes/key={{staged-quote-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -9,5 +9,6 @@
 @business-unit-key = 
 @order-id = 
 
-GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/{{order-id}}?expand=
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/{{order-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

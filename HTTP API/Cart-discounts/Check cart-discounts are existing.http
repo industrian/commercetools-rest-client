@@ -6,5 +6,6 @@
 
 ### Check cart-discounts are existing
 
-HEAD https://{{host}}/{{project-key}}/cart-discounts?where=
+HEAD https://{{host}}/{{project-key}}/cart-discounts
+#?where=
 Authorization: Bearer {{ctp_access_token}}

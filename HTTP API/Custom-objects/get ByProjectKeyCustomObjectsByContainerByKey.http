@@ -8,5 +8,6 @@
 @container = 
 @custom-object-key = 
 
-GET https://{{host}}/{{project-key}}/custom-objects/{{container}}/{{custom-object-key}}?expand=
+GET https://{{host}}/{{project-key}}/custom-objects/{{container}}/{{custom-object-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

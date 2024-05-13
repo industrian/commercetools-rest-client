@@ -6,5 +6,6 @@
 
 ### Check quote-requests are existing
 
-HEAD https://{{host}}/{{project-key}}/quote-requests?where=
+HEAD https://{{host}}/{{project-key}}/quote-requests
+#?where=
 Authorization: Bearer {{ctp_access_token}}

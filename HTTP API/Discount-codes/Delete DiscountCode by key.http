@@ -8,7 +8,8 @@
 @discount-code-key = 
 @discount-code-version = 
 
-DELETE https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}?dataErasure=
-&version={{discount-code-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
+#?dataErasure=
+#&version={{discount-code-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

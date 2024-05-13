@@ -6,7 +6,8 @@
 
 ### Create InventoryEntry
 
-POST https://{{host}}/{{project-key}}/inventory?expand=
+POST https://{{host}}/{{project-key}}/inventory
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "sku" : "sku_GIRLS_CREW_variant1_1421832124541",
   "quantityOnStock" : 4,

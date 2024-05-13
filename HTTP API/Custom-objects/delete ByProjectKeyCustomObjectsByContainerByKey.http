@@ -9,7 +9,8 @@
 @custom-object-key = 
 @custom-object-version = 
 
-DELETE https://{{host}}/{{project-key}}/custom-objects/{{container}}/{{custom-object-key}}?version={{custom-object-version}}
-&expand=
-&dataErasure=
+DELETE https://{{host}}/{{project-key}}/custom-objects/{{container}}/{{custom-object-key}}
+#?version={{custom-object-version}}
+#&expand=
+#&dataErasure=
 Authorization: Bearer {{ctp_access_token}}

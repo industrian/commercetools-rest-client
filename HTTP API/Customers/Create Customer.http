@@ -6,7 +6,8 @@
 
 ### Create Customer
 
-POST https://{{host}}/{{project-key}}/customers?expand=
+POST https://{{host}}/{{project-key}}/customers
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "email" : "johndoe@example.com",
   "firstName" : "John",

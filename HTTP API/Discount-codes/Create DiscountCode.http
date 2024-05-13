@@ -6,7 +6,8 @@
 
 ### Create DiscountCode
 
-POST https://{{host}}/{{project-key}}/discount-codes?expand=
+POST https://{{host}}/{{project-key}}/discount-codes
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "code" : "SAVE10",
   "name" : {

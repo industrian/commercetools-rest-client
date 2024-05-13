@@ -7,12 +7,13 @@
 ### Get ProductProjection by id
 @product-projection-id = 
 
-GET https://{{host}}/{{project-key}}/product-projections/{{product-projection-id}}?staged=
-&priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&storeProjection=
-&expand=
+GET https://{{host}}/{{project-key}}/product-projections/{{product-projection-id}}
+#?staged=
+#&priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&storeProjection=
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

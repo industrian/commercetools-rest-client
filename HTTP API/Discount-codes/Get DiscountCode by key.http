@@ -7,5 +7,6 @@
 ### Get DiscountCode by key
 @discount-code-key = 
 
-GET https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}?expand=
+GET https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

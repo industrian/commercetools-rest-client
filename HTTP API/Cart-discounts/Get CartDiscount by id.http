@@ -7,5 +7,6 @@
 ### Get CartDiscount by id
 @cart-discount-id = 
 
-GET https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}?expand=
+GET https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get ProductType by id
 @product-type-id = 
 
-GET https://{{host}}/{{project-key}}/product-types/{{product-type-id}}?expand=
+GET https://{{host}}/{{project-key}}/product-types/{{product-type-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

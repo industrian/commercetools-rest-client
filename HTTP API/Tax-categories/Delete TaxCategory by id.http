@@ -8,6 +8,7 @@
 @tax-category-id = 
 @tax-category-version = 
 
-DELETE https://{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}?version={{tax-category-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}
+#?version={{tax-category-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

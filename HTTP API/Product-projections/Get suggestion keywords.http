@@ -6,11 +6,12 @@
 
 ### Get suggestion keywords
 
-GET https://{{host}}/{{project-key}}/product-projections/suggest?fuzzy=
-&/searchKeywords.[a-z]{2}(-[A-Z]{2})?/=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&staged=
+GET https://{{host}}/{{project-key}}/product-projections/suggest
+#?fuzzy=
+#&/searchKeywords.[a-z]{2}(-[A-Z]{2})?/=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&staged=
 Authorization: Bearer {{ctp_access_token}}

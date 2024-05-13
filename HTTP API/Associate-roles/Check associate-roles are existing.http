@@ -6,5 +6,6 @@
 
 ### Check associate-roles are existing
 
-HEAD https://{{host}}/{{project-key}}/associate-roles?where=
+HEAD https://{{host}}/{{project-key}}/associate-roles
+#?where=
 Authorization: Bearer {{ctp_access_token}}

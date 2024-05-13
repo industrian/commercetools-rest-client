@@ -7,10 +7,11 @@
 ### Query available products in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-selection-assignments?limit=
-&offset=
-&withTotal=
-&expand=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-selection-assignments
+#?limit=
+#&offset=
+#&withTotal=
+#&expand=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

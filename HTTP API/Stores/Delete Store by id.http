@@ -8,6 +8,7 @@
 @store-id = 
 @store-version = 
 
-DELETE https://{{host}}/{{project-key}}/stores/{{store-id}}?version={{store-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/stores/{{store-id}}
+#?version={{store-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

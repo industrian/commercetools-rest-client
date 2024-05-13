@@ -7,5 +7,6 @@
 ### Get BusinessUnit by id
 @business-unit-id = 
 
-GET https://{{host}}/{{project-key}}/business-units/{{business-unit-id}}?expand=
+GET https://{{host}}/{{project-key}}/business-units/{{business-unit-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

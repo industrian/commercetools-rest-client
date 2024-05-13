@@ -6,5 +6,6 @@
 
 ### Check shipping-methods are existing
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods?where=
+HEAD https://{{host}}/{{project-key}}/shipping-methods
+#?where=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,11 +7,12 @@
 ### Get CustomObjectPagedQueryResponse by container
 @container = 
 
-GET https://{{host}}/{{project-key}}/custom-objects/{{container}}?sort=
-&where=
-&expand=
-&/^var[.][a-zA-Z0-9]+$/=
-&limit=
-&offset=
-&withTotal=
+GET https://{{host}}/{{project-key}}/custom-objects/{{container}}
+#?sort=
+#&where=
+#&expand=
+#&/^var[.][a-zA-Z0-9]+$/=
+#&limit=
+#&offset=
+#&withTotal=
 Authorization: Bearer {{ctp_access_token}}

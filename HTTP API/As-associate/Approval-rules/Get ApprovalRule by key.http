@@ -9,5 +9,6 @@
 @business-unit-key = 
 @approval-rule-key = 
 
-GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/approval-rules/key={{approval-rule-key}}?expand=
+GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/approval-rules/key={{approval-rule-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

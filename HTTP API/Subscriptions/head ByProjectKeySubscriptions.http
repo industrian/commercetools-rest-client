@@ -6,5 +6,6 @@
 
 ### head ByProjectKeySubscriptions
 
-HEAD https://{{host}}/{{project-key}}/subscriptions?where=
+HEAD https://{{host}}/{{project-key}}/subscriptions
+#?where=
 Authorization: Bearer {{ctp_access_token}}

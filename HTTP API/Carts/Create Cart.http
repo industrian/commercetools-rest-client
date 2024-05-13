@@ -6,7 +6,8 @@
 
 ### Create Cart
 
-POST https://{{host}}/{{project-key}}/carts?expand=
+POST https://{{host}}/{{project-key}}/carts
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "currency" : "EUR"
 }

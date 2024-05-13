@@ -6,7 +6,8 @@
 
 ### Create AttributeGroup
 
-POST https://{{host}}/{{project-key}}/attribute-groups?expand=
+POST https://{{host}}/{{project-key}}/attribute-groups
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "name" : {
     "en" : "Sample name"

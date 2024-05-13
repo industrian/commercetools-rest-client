@@ -6,24 +6,25 @@
 
 ### Search Products by get
 
-GET https://{{host}}/{{project-key}}/product-projections/search?fuzzy=
-&fuzzyLevel=
-&markMatchingVariants=
-&filter=
-&filter.facets=
-&filter.query=
-&facet=
-&/text.[a-z]{2}(-[A-Z]{2})?/=
-&sort=
-&limit=
-&offset=
-&withTotal=
-&staged=
-&priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&storeProjection=
-&expand=
+GET https://{{host}}/{{project-key}}/product-projections/search
+#?fuzzy=
+#&fuzzyLevel=
+#&markMatchingVariants=
+#&filter=
+#&filter.facets=
+#&filter.query=
+#&facet=
+#&/text.[a-z]{2}(-[A-Z]{2})?/=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&staged=
+#&priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&storeProjection=
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,6 @@
 ### Get ShoppingList by key
 @shopping-list-key = 
 
-GET https://{{host}}/{{project-key}}/shopping-lists/key={{shopping-list-key}}?expand=
+GET https://{{host}}/{{project-key}}/shopping-lists/key={{shopping-list-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

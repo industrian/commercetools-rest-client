@@ -6,12 +6,13 @@
 
 ### Create Product
 
-POST https://{{host}}/{{project-key}}/products?priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&expand=
+POST https://{{host}}/{{project-key}}/products
+#?priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&expand=
 Authorization: Bearer {{ctp_access_token}}{
   "productType" : {
     "id" : "24f510c3-f334-4099-94e2-d6224a8eb919",

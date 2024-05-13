@@ -7,11 +7,12 @@
 ### Query available product tailoring in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring?limit=
-&offset=
-&withTotal=
-&expand=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
-&sort=
+GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring
+#?limit=
+#&offset=
+#&withTotal=
+#&expand=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
+#&sort=
 Authorization: Bearer {{ctp_access_token}}

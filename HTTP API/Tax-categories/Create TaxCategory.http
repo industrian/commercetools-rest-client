@@ -6,7 +6,8 @@
 
 ### Create TaxCategory
 
-POST https://{{host}}/{{project-key}}/tax-categories?expand=
+POST https://{{host}}/{{project-key}}/tax-categories
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "name" : "test-tax-category",
   "rates" : [ {

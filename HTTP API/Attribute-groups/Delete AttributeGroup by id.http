@@ -8,6 +8,7 @@
 @attribute-group-id = 
 @attribute-group-version = 
 
-DELETE https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}?version={{attribute-group-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
+#?version={{attribute-group-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

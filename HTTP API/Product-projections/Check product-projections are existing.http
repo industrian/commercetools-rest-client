@@ -6,5 +6,6 @@
 
 ### Check product-projections are existing
 
-HEAD https://{{host}}/{{project-key}}/product-projections?where=
+HEAD https://{{host}}/{{project-key}}/product-projections
+#?where=
 Authorization: Bearer {{ctp_access_token}}

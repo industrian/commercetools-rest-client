@@ -8,5 +8,6 @@
 @extension-key = 
 @extension-version = 
 
-DELETE https://{{host}}/{{project-key}}/extensions/key={{extension-key}}?version={{extension-version}}
+DELETE https://{{host}}/{{project-key}}/extensions/key={{extension-key}}
+#?version={{extension-version}}
 Authorization: Bearer {{ctp_access_token}}

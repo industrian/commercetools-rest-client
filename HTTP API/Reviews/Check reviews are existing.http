@@ -6,5 +6,6 @@
 
 ### Check reviews are existing
 
-HEAD https://{{host}}/{{project-key}}/reviews?where=
+HEAD https://{{host}}/{{project-key}}/reviews
+#?where=
 Authorization: Bearer {{ctp_access_token}}

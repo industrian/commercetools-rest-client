@@ -6,5 +6,6 @@
 
 ### Check business-units are existing
 
-HEAD https://{{host}}/{{project-key}}/business-units?where=
+HEAD https://{{host}}/{{project-key}}/business-units
+#?where=
 Authorization: Bearer {{ctp_access_token}}

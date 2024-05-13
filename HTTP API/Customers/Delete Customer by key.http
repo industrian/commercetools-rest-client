@@ -8,7 +8,8 @@
 @customer-key = 
 @customer-version = 
 
-DELETE https://{{host}}/{{project-key}}/customers/key={{customer-key}}?dataErasure=
-&version={{customer-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/customers/key={{customer-key}}
+#?dataErasure=
+#&version={{customer-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

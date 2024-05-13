@@ -6,10 +6,11 @@
 
 ### Query Extensions
 
-GET https://{{host}}/{{project-key}}/extensions?sort=
-&limit=
-&offset=
-&withTotal=
-&where=
-&/^var[.][a-zA-Z0-9]+$/=
+GET https://{{host}}/{{project-key}}/extensions
+#?sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,8 @@
 
 ### head ByProjectKeyShippingMethodsMatchingLocation
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-location?country=
-&state=
-&currency=
+HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-location
+#?country=
+#&state=
+#&currency=
 Authorization: Bearer {{ctp_access_token}}

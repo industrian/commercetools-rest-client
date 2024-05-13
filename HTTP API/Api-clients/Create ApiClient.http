@@ -6,7 +6,8 @@
 
 ### Create ApiClient
 
-POST https://{{host}}/{{project-key}}/api-clients?expand=
+POST https://{{host}}/{{project-key}}/api-clients
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "name" : "api-client-name",
   "scope" : "view_products:{projectKey}",

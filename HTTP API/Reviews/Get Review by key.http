@@ -7,5 +7,6 @@
 ### Get Review by key
 @review-key = 
 
-GET https://{{host}}/{{project-key}}/reviews/key={{review-key}}?expand=
+GET https://{{host}}/{{project-key}}/reviews/key={{review-key}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

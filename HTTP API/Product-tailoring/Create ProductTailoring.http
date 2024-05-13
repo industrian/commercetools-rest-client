@@ -6,7 +6,8 @@
 
 ### Create ProductTailoring
 
-POST https://{{host}}/{{project-key}}/product-tailoring?expand=
+POST https://{{host}}/{{project-key}}/product-tailoring
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "product" : {
     "typeId" : "product",

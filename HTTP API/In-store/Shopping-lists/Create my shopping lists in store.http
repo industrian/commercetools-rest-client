@@ -7,7 +7,8 @@
 ### Create my shopping lists in store
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists?expand=
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "name" : {
     "en" : "My shopping list"

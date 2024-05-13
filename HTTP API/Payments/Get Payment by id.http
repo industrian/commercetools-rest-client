@@ -7,5 +7,6 @@
 ### Get Payment by id
 @payment-id = 
 
-GET https://{{host}}/{{project-key}}/payments/{{payment-id}}?expand=
+GET https://{{host}}/{{project-key}}/payments/{{payment-id}}
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

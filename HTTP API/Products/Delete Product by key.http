@@ -8,11 +8,12 @@
 @product-key = 
 @product-version = 
 
-DELETE https://{{host}}/{{project-key}}/products/key={{product-key}}?priceCurrency=
-&priceCountry=
-&priceCustomerGroup=
-&priceChannel=
-&localeProjection=
-&version={{product-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/products/key={{product-key}}
+#?priceCurrency=
+#&priceCountry=
+#&priceCustomerGroup=
+#&priceChannel=
+#&localeProjection=
+#&version={{product-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

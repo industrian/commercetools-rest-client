@@ -8,6 +8,7 @@
 @cart-discount-id = 
 @cart-discount-version = 
 
-DELETE https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}?version={{cart-discount-version}}
-&expand=
+DELETE https://{{host}}/{{project-key}}/cart-discounts/{{cart-discount-id}}
+#?version={{cart-discount-version}}
+#&expand=
 Authorization: Bearer {{ctp_access_token}}

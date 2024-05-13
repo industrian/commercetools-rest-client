@@ -7,7 +7,8 @@
 ### Create my cart in store
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts?expand=
+POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
+#?expand=
 Authorization: Bearer {{ctp_access_token}}{
   "currency" : "EUR"
 }
