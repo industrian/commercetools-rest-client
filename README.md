@@ -49,4 +49,4 @@ Variables used within API calls are defined above the call. You should define th
 
 In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but you should remove them if you do not need them. Sending an empty query parameter will probably break the API call.
 
-In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but commented out. To define a query parameter, remove the `#` and include a value. Please note that you should change the `&` to `?` if it is the first (or only) query parameter.
+In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but commented out. To define a query parameter, remove the `#` and include a value. Please note that you should change the `&` to `?` if it is the first (or only) query parameter. Please note that in some calls some query parameters are required. For more information, consult the [commercetools documentation](https://docs.commercetools.com/api/).
