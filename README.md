@@ -43,10 +43,9 @@ Each API call is within a dedicated .http file, nested under folders representin
 
 At the beginning of every file is an Authentication call. You must make ths call first as it will get and save the bearer token to use in the actual API call.
 
-Variables used within API calls are defined above the call. You should define these before sending the API request. For example, in the following you must add a `category-id` and `category-version`. Strings should not be enclosed in quotation marks. For example:
+Variables used within API calls are defined above the call. You should define these before sending the API request. For example, in the following you must add a `category-id` and `category-version`. Strings should not be enclosed in quotation marks.
 
 ![Screenshot_37](https://github.com/industrian/commercetools-rest-client/assets/77231096/be5e5869-3be4-4b63-b865-1bb894b12f9e)
 
-In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but you should remove them if you do not need them. Sending an empty query parameter will probably break the API call.
 
 In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but commented out. To define a query parameter, remove the `#` and include a value. Please note that you should change the `&` to `?` if it is the first (or only) query parameter. Please note that in some calls some query parameters are required. For more information, consult the [commercetools documentation](https://docs.commercetools.com/api/).
