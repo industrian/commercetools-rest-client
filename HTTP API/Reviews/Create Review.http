@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/reviews
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "authorName" : "John Doe",
   "title" : "Incredible",
   "text" : "Best product ever",

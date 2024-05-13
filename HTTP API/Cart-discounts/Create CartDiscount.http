@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/cart-discounts
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "name" : {
     "en" : "Summer Sale"
   },

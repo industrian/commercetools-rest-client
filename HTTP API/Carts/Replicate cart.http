@@ -7,7 +7,9 @@
 ### Replicate cart
 
 POST https://{{host}}/{{project-key}}/carts/replicate
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "reference" : {
     "id" : "74dcac8b-0c67-4f37-b693-3acd33e3c457",
     "typeId" : "cart"

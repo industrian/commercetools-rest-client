@@ -9,7 +9,9 @@
 
 POST https://{{host}}/{{project-key}}/me/shopping-lists/{{shopping-list-id}}
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
     "version": {{shopping-list-version}},
     "actions": [
         {

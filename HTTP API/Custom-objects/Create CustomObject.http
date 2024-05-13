@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/custom-objects
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "container" : "test-container",
   "key" : "test-key",
   "value" : "test-value"

@@ -8,7 +8,9 @@
 @store-key = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/login
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "email" : "johndoe@example.com",
   "password" : "secret123",
   "anonymousCart" : {

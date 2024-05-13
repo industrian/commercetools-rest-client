@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/shopping-lists
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "name" : {
     "en" : "My shopping list"
   },

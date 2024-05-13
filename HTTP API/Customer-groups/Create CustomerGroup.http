@@ -8,6 +8,8 @@
 
 POST https://{{host}}/{{project-key}}/customer-groups
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "groupName" : "Webshop user"
 }

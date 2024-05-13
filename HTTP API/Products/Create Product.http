@@ -13,7 +13,9 @@ POST https://{{host}}/{{project-key}}/products
 #&priceChannel=
 #&localeProjection=
 #&expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "productType" : {
     "id" : "24f510c3-f334-4099-94e2-d6224a8eb919",
     "typeId" : "product-type"

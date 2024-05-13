@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/customers
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "email" : "johndoe@example.com",
   "firstName" : "John",
   "lastName" : "Doe",

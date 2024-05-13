@@ -7,7 +7,9 @@
 ### Signup my customer
 
 POST https://{{host}}/{{project-key}}/me/signup
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "email" : "johndoe@example.com",
   "firstName" : "John",
   "lastName" : "Doe",

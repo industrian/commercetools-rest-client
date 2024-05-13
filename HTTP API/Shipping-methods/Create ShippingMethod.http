@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/shipping-methods
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "name" : "DHL",
   "localizedDescription" : {
     "en" : "Standard delivery"

@@ -8,7 +8,9 @@
 
 POST https://{{host}}/{{project-key}}/stores
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "key" : "random-key-123",
   "name" : {
     "en" : "main store"

@@ -10,7 +10,9 @@
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
     "version": {{customer-version}},
     "actions": [
         {

@@ -7,7 +7,9 @@
 ### Get matching product discounts
 
 POST https://{{host}}/{{project-key}}/product-discounts/matching
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "productId": "123456",
   "variantId": 1,
   "staged": false,

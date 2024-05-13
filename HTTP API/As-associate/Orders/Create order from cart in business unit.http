@@ -10,7 +10,9 @@
 
 POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "cart" : {
     "id" : "7c2e2694-aefe-43d7-888e-6a99514caaca",
     "typeId" : "cart"

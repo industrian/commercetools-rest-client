@@ -7,7 +7,9 @@
 ### Create a Token for verifying the Customer's Email
 
 POST https://{{host}}/{{project-key}}/customers/email-token
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "id" : "58ae9ffc-7e7b-414c-b060-357749d80c55",
   "ttlMinutes" : 4320
 }

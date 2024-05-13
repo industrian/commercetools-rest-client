@@ -9,7 +9,9 @@
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists
 #?expand=
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "name" : {
     "en" : "My shopping list"
   },

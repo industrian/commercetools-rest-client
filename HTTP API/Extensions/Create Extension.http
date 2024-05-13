@@ -7,7 +7,9 @@
 ### Create Extension
 
 POST https://{{host}}/{{project-key}}/extensions
-Authorization: Bearer {{ctp_access_token}}{
+Authorization: Bearer {{ctp_access_token}}
+
+{
   "destination" : {
     "type" : "HTTP",
     "url" : "https://example.azurewebsites.net/api/extension",
