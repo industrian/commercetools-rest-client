@@ -24,8 +24,8 @@ You should consult the [commercetools documentation](https://docs.commercetools.
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
-    - `auth_url`: the authorization URL of the region your Project is hosted
-    - `host`: the API URL of the region your Project is hosted
+    - `auth_url`: the authorization URL of the region your Project is hosted with no trailing `/`. For example: `auth.europe-west1.gcp.commercetools.com`
+    - `host`: the API URL of the region your Project is hosted with no trailing `/`. For example: `api.europe-west1.gcp.commercetools.com`
     - `scopes`: your API Client scopes
 
 For example:
