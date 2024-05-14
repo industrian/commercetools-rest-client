@@ -20,7 +20,7 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 1. Open your Visual Studio Code User Settings (JSON) file.
      ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
 
-3. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
+2. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
@@ -36,6 +36,10 @@ You can define multiple Projects within the settings file. These Projects can th
 
 ![Screenshot_36](https://github.com/industrian/commercetools-rest-client/assets/77231096/83d0f706-96d3-4c9f-b641-a50dba1b9622)
 
+> [!NOTE]
+> If `rest-client.environmentVariables` does not exist in your settings.json file, you can add it using intellisense.
+> 
+> ![Screenshot 2024-05-14 at 09 08 31](https://github.com/industrian/commercetools-rest-client/assets/77231096/384ef2ad-cedc-4555-a0b9-9bec9afa6266)
 
 # Making API calls
 
