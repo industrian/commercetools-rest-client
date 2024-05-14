@@ -17,10 +17,13 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 
 # Set up
 
-1. Open your Visual Studio Code User Settings (JSON) file.
-     ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
+1. Open the **Command Palette** and select **Preferences: Open User Settings (JSON)**.
+    ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
 
-2. Find `rest-client.environmentVariables` and add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
+2. If this file does not have an entry called `rest-client.environmentVariables`, then create one. When you start typing, you should be prompted to create it using autocomplete.
+    ![Screenshot 2024-05-14 at 09 08 31](https://github.com/industrian/commercetools-rest-client/assets/77231096/384ef2ad-cedc-4555-a0b9-9bec9afa6266)
+
+3. In `rest-client.environmentVariables`, add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
@@ -36,20 +39,16 @@ You can define multiple Projects within the settings file. These Projects can th
 
 ![Screenshot_36](https://github.com/industrian/commercetools-rest-client/assets/77231096/83d0f706-96d3-4c9f-b641-a50dba1b9622)
 
-> [!NOTE]
-> If `rest-client.environmentVariables` does not exist in your settings.json file, you can add it using intellisense.
-> 
-> ![Screenshot 2024-05-14 at 09 08 31](https://github.com/industrian/commercetools-rest-client/assets/77231096/384ef2ad-cedc-4555-a0b9-9bec9afa6266)
+
 
 # Making API calls
 
 Each API call is within a dedicated .http file, nested under folders representing the resource. Update actions are also within a dedicated folder.
 
-At the beginning of every file is an Authentication call. You must make ths call first as it will get and save the bearer token to use in the actual API call.
+At the beginning of every file is an Authentication call. You must make this call first as it will get and save the bearer token to use in the actual API call.
 
 Variables used within API calls are defined above the call. You should define these before sending the API request. For example, in the following you must add a `category-id` and `category-version`. Strings should not be enclosed in quotation marks.
 
 ![Screenshot_37](https://github.com/industrian/commercetools-rest-client/assets/77231096/be5e5869-3be4-4b63-b865-1bb894b12f9e)
-
 
 In some API calls you can define query parameters (such as `where` or `sort`). Placeholders for these parameters are included, but commented out. To define a query parameter, remove the `#` and include a value. Please note that you should change the `&` to `?` if it is the first (or only) query parameter. Please note that in some calls some query parameters are required. For more information, consult the [commercetools documentation](https://docs.commercetools.com/api/).
