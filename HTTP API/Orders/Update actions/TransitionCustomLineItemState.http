@@ -9,7 +9,6 @@
 @order-version = 
 @customLineItemId = 
 @state-id = 
-@state-id = 
 
 POST https://{{host}}/{{project-key}}/orders/{{order-id}}
 Authorization: Bearer {{ctp_access_token}}

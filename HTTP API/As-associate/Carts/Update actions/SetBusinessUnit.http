@@ -9,7 +9,6 @@
 @business-unit-key = 
 @cart-id = 
 @cart-version = 
-@business-unit-key = 
 
 POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/{{cart-id}}
 Authorization: Bearer {{ctp_access_token}}

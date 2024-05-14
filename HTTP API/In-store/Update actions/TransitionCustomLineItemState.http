@@ -10,7 +10,6 @@
 @order-version = 
 @customLineItemId = 
 @state-id = 
-@state-id = 
 
 POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=

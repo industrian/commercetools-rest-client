@@ -7,7 +7,6 @@
 ### SetTransitions
 @state-id = 
 @state-version = 
-@state-id = 
 @state-id2 = 
 
 POST https://{{host}}/{{project-key}}/states/{{state-id}}

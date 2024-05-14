@@ -9,7 +9,6 @@
 @cart-version = 
 @shopping-list-id = 
 @channel-id = 
-@channel-id = 
 
 POST https://{{host}}/{{project-key}}/carts/{{cart-id}}
 Authorization: Bearer {{ctp_access_token}}
