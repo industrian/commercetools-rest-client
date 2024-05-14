@@ -6,6 +6,7 @@
 
 ### Delete ShoppingList by key
 @shopping-list-key = 
+@shopping-list-version = 
 
 DELETE https://{{host}}/{{project-key}}/shopping-lists/key={{shopping-list-key}}
 #?expand=

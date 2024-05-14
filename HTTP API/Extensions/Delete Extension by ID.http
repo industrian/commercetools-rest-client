@@ -6,6 +6,7 @@
 
 ### Delete Extension by ID
 @extension-id = 
+@extension-version = 
 
 DELETE https://{{host}}/{{project-key}}/extensions/{{extension-id}}
 #?version={{extension-version}}

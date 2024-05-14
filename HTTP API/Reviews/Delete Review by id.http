@@ -6,6 +6,7 @@
 
 ### Delete Review by id
 @review-id = 
+@review-version = 
 
 DELETE https://{{host}}/{{project-key}}/reviews/{{review-id}}
 #?dataErasure=

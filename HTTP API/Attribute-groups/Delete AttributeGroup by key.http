@@ -6,6 +6,7 @@
 
 ### Delete AttributeGroup by key
 @attribute-group-key = 
+@attribute-group-version = 
 
 DELETE https://{{host}}/{{project-key}}/attribute-groups/key={{attribute-group-key}}
 #?version={{attribute-group-version}}

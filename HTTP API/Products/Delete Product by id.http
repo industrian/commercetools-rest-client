@@ -6,6 +6,7 @@
 
 ### Delete Product by id
 @product-id = 
+@product-version = 
 
 DELETE https://{{host}}/{{project-key}}/products/{{product-id}}
 #?priceCurrency=

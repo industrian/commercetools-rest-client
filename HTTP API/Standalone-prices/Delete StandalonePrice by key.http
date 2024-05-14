@@ -6,6 +6,7 @@
 
 ### Delete StandalonePrice by key
 @standalone-price-key = 
+@standalone-price-version = 
 
 DELETE https://{{host}}/{{project-key}}/standalone-prices/key={{standalone-price-key}}
 #?version={{standalone-price-version}}

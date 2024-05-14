@@ -6,6 +6,7 @@
 
 ### Delete Zone by key
 @zone-key = 
+@zone-version = 
 
 DELETE https://{{host}}/{{project-key}}/zones/key={{zone-key}}
 #?version={{zone-version}}

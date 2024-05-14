@@ -6,6 +6,7 @@
 
 ### Delete Channel by id
 @channel-id = 
+@channel-version = 
 
 DELETE https://{{host}}/{{project-key}}/channels/{{channel-id}}
 #?version={{channel-version}}

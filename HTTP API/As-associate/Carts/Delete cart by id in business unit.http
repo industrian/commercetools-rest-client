@@ -8,6 +8,7 @@
 @associate-id = 
 @business-unit-key = 
 @cart-id = 
+@cart-version = 
 
 DELETE https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/{{cart-id}}
 #?dataErasure=

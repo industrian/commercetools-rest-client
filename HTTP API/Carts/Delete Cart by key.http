@@ -6,6 +6,7 @@
 
 ### Delete Cart by key
 @cart-key = 
+@cart-version = 
 
 DELETE https://{{host}}/{{project-key}}/carts/key={{cart-key}}
 #?dataErasure=

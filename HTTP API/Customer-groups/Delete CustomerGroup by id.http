@@ -6,6 +6,7 @@
 
 ### Delete CustomerGroup by id
 @customer-group-id = 
+@customer-group-version = 
 
 DELETE https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}
 #?version={{customer-group-version}}

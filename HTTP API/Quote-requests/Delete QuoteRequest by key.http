@@ -6,6 +6,7 @@
 
 ### Delete QuoteRequest by key
 @quote-request-key = 
+@quote-request-version = 
 
 DELETE https://{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
 #?dataErasure=

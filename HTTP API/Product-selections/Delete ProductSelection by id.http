@@ -6,6 +6,7 @@
 
 ### Delete ProductSelection by id
 @product-selection-id = 
+@product-selection-version = 
 
 DELETE https://{{host}}/{{project-key}}/product-selections/{{product-selection-id}}
 #?version={{product-selection-version}}
