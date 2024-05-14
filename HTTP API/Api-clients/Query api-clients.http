@@ -6,7 +6,7 @@
 
 ### Query api-clients
 
-GET https://{{host}}/{{project-key}}/api-clients
+GET https://api.{{host}}/{{project-key}}/api-clients
 #?expand=
 #&sort=
 #&limit=

@@ -7,5 +7,5 @@
 ### Check Channel exists by id
 @channel-id = 
 
-HEAD https://{{host}}/{{project-key}}/channels/{{channel-id}}
+HEAD https://api.{{host}}/{{project-key}}/channels/{{channel-id}}
 Authorization: Bearer {{ctp_access_token}}

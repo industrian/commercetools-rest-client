@@ -7,6 +7,6 @@
 ### Check carts are existing
 @store-key = 
 
-HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
+HEAD https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
 #?where=
 Authorization: Bearer {{ctp_access_token}}

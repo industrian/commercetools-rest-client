@@ -6,6 +6,6 @@
 
 ### Check products are existing
 
-HEAD https://{{host}}/{{project-key}}/products
+HEAD https://api.{{host}}/{{project-key}}/products
 #?where=
 Authorization: Bearer {{ctp_access_token}}

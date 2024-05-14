@@ -7,6 +7,6 @@
 ### Get CartDiscount by key
 @cart-discount-key = 
 
-GET https://{{host}}/{{project-key}}/cart-discounts/key={{cart-discount-key}}
+GET https://api.{{host}}/{{project-key}}/cart-discounts/key={{cart-discount-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

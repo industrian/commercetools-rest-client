@@ -7,5 +7,5 @@
 ### Check ProductType exists by key
 @product-type-key = 
 
-HEAD https://{{host}}/{{project-key}}/product-types/key={{product-type-key}}
+HEAD https://api.{{host}}/{{project-key}}/product-types/key={{product-type-key}}
 Authorization: Bearer {{ctp_access_token}}

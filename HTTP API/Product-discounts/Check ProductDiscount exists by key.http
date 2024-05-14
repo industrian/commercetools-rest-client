@@ -7,5 +7,5 @@
 ### Check ProductDiscount exists by key
 @product-discount-key = 
 
-HEAD https://{{host}}/{{project-key}}/product-discounts/key={{product-discount-key}}
+HEAD https://api.{{host}}/{{project-key}}/product-discounts/key={{product-discount-key}}
 Authorization: Bearer {{ctp_access_token}}

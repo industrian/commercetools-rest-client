@@ -9,7 +9,7 @@
 @product-discount-version = 
 @product-id = 
 
-POST https://{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
+POST https://api.{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

@@ -6,7 +6,7 @@
 
 ### head ByProjectKeyShippingMethodsMatchingOrderedit
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-orderedit
+HEAD https://api.{{host}}/{{project-key}}/shipping-methods/matching-orderedit
 #?orderEditId=
 #&country=
 #&state=

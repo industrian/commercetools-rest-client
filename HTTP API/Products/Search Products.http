@@ -6,7 +6,7 @@
 
 ### Search Products
 
-POST https://{{host}}/{{project-key}}/products/search
+POST https://api.{{host}}/{{project-key}}/products/search
 Authorization: Bearer {{ctp_access_token}}
 
 {

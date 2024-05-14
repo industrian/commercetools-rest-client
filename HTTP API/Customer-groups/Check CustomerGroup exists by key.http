@@ -7,5 +7,5 @@
 ### Check CustomerGroup exists by key
 @customer-group-key = 
 
-HEAD https://{{host}}/{{project-key}}/customer-groups/key={{customer-group-key}}
+HEAD https://api.{{host}}/{{project-key}}/customer-groups/key={{customer-group-key}}
 Authorization: Bearer {{ctp_access_token}}

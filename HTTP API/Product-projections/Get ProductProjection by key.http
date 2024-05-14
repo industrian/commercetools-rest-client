@@ -7,7 +7,7 @@
 ### Get ProductProjection by key
 @product-projection-key = 
 
-GET https://{{host}}/{{project-key}}/product-projections/key={{product-projection-key}}
+GET https://api.{{host}}/{{project-key}}/product-projections/key={{product-projection-key}}
 #?staged=
 #&priceCurrency=
 #&priceCountry=

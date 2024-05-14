@@ -7,7 +7,7 @@
 ### Authenticate my Customer (Sign In)
 @cart-id = 
 
-POST https://{{host}}/{{project-key}}/me/login
+POST https://api.{{host}}/{{project-key}}/me/login
 Authorization: Bearer {{ctp_access_token}}
 
 {

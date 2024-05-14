@@ -7,6 +7,6 @@
 ### Get AttributeGroup by key
 @attribute-group-key = 
 
-GET https://{{host}}/{{project-key}}/attribute-groups/key={{attribute-group-key}}
+GET https://api.{{host}}/{{project-key}}/attribute-groups/key={{attribute-group-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

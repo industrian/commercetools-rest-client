@@ -10,7 +10,7 @@
 @order-id = 
 @order-version = 
 
-POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/{{order-id}}
+POST https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/{{order-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

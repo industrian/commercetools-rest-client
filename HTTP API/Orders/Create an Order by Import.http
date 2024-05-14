@@ -6,7 +6,7 @@
 
 ### Create an Order by Import
 
-POST https://{{host}}/{{project-key}}/orders/import
+POST https://api.{{host}}/{{project-key}}/orders/import
 Authorization: Bearer {{ctp_access_token}}
 
 {

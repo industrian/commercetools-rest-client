@@ -7,6 +7,6 @@
 ### Get ProductDiscount by id
 @product-discount-id = 
 
-GET https://{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
+GET https://api.{{host}}/{{project-key}}/product-discounts/{{product-discount-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

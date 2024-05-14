@@ -6,7 +6,7 @@
 
 ### Query Subscriptions
 
-GET https://{{host}}/{{project-key}}/subscriptions
+GET https://api.{{host}}/{{project-key}}/subscriptions
 #?sort=
 #&limit=
 #&offset=

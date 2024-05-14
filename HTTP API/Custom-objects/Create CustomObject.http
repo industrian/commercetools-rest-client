@@ -6,7 +6,7 @@
 
 ### Create CustomObject
 
-POST https://{{host}}/{{project-key}}/custom-objects
+POST https://api.{{host}}/{{project-key}}/custom-objects
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

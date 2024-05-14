@@ -9,7 +9,7 @@
 @order-version = 
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/orders/{{order-id}}
+POST https://api.{{host}}/{{project-key}}/orders/{{order-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

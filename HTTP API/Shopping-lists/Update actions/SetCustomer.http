@@ -9,7 +9,7 @@
 @shopping-list-version = 
 @customer-id = 
 
-POST https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+POST https://api.{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

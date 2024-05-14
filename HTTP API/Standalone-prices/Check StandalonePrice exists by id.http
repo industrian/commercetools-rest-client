@@ -7,5 +7,5 @@
 ### Check StandalonePrice exists by id
 @standalone-price-id = 
 
-HEAD https://{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}
+HEAD https://api.{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}
 Authorization: Bearer {{ctp_access_token}}

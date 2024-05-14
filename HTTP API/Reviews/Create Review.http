@@ -6,7 +6,7 @@
 
 ### Create Review
 
-POST https://{{host}}/{{project-key}}/reviews
+POST https://api.{{host}}/{{project-key}}/reviews
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

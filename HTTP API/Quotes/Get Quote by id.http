@@ -7,6 +7,6 @@
 ### Get Quote by id
 @quote-id = 
 
-GET https://{{host}}/{{project-key}}/quotes/{{quote-id}}
+GET https://api.{{host}}/{{project-key}}/quotes/{{quote-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

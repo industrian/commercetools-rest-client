@@ -6,7 +6,7 @@
 
 ### Get matching product discounts
 
-POST https://{{host}}/{{project-key}}/product-discounts/matching
+POST https://api.{{host}}/{{project-key}}/product-discounts/matching
 Authorization: Bearer {{ctp_access_token}}
 
 {

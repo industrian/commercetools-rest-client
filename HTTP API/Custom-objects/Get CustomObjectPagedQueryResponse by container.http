@@ -7,7 +7,7 @@
 ### Get CustomObjectPagedQueryResponse by container
 @container = 
 
-GET https://{{host}}/{{project-key}}/custom-objects/{{container}}
+GET https://api.{{host}}/{{project-key}}/custom-objects/{{container}}
 #?sort=
 #&where=
 #&expand=

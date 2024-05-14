@@ -7,6 +7,6 @@
 ### Get StandalonePrice by key
 @standalone-price-key = 
 
-GET https://{{host}}/{{project-key}}/standalone-prices/key={{standalone-price-key}}
+GET https://api.{{host}}/{{project-key}}/standalone-prices/key={{standalone-price-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

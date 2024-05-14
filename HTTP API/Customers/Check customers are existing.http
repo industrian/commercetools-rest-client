@@ -6,6 +6,6 @@
 
 ### Check customers are existing
 
-HEAD https://{{host}}/{{project-key}}/customers
+HEAD https://api.{{host}}/{{project-key}}/customers
 #?where=
 Authorization: Bearer {{ctp_access_token}}

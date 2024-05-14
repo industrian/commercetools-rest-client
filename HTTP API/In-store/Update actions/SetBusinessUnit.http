@@ -10,7 +10,7 @@
 @cart-version = 
 @business-unit-key = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

@@ -6,7 +6,7 @@
 
 ### Verify my Customer's Email
 
-POST https://{{host}}/{{project-key}}/me/email/confirm
+POST https://api.{{host}}/{{project-key}}/me/email/confirm
 Authorization: Bearer {{ctp_access_token}}
 
 {

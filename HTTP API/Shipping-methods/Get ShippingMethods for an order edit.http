@@ -6,7 +6,7 @@
 
 ### Get ShippingMethods for an order edit
 
-GET https://{{host}}/{{project-key}}/shipping-methods/matching-orderedit
+GET https://api.{{host}}/{{project-key}}/shipping-methods/matching-orderedit
 #?orderEditId=
 #&country=
 #&state=

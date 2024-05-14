@@ -6,7 +6,7 @@
 
 ### Query standalone-prices
 
-GET https://{{host}}/{{project-key}}/standalone-prices
+GET https://api.{{host}}/{{project-key}}/standalone-prices
 #?expand=
 #&sort=
 #&limit=

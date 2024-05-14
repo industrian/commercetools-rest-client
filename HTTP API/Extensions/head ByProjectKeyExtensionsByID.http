@@ -7,5 +7,5 @@
 ### head ByProjectKeyExtensionsByID
 @extension-id = 
 
-HEAD https://{{host}}/{{project-key}}/extensions/{{extension-id}}
+HEAD https://api.{{host}}/{{project-key}}/extensions/{{extension-id}}
 Authorization: Bearer {{ctp_access_token}}

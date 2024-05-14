@@ -6,7 +6,7 @@
 
 ### Query product-projections
 
-GET https://{{host}}/{{project-key}}/product-projections
+GET https://api.{{host}}/{{project-key}}/product-projections
 #?staged=
 #&priceCurrency=
 #&priceCountry=

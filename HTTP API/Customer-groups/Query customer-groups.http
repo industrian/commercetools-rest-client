@@ -6,7 +6,7 @@
 
 ### Query customer-groups
 
-GET https://{{host}}/{{project-key}}/customer-groups
+GET https://api.{{host}}/{{project-key}}/customer-groups
 #?where=
 #&expand=
 #&sort=

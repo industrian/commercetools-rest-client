@@ -8,7 +8,7 @@
 @quote-id = 
 @quote-version = 
 
-POST https://{{host}}/{{project-key}}/quotes/{{quote-id}}
+POST https://api.{{host}}/{{project-key}}/quotes/{{quote-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

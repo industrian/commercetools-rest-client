@@ -7,5 +7,5 @@
 ### Check Category exists by id
 @category-id = 
 
-HEAD https://{{host}}/{{project-key}}/categories/{{category-id}}
+HEAD https://api.{{host}}/{{project-key}}/categories/{{category-id}}
 Authorization: Bearer {{ctp_access_token}}

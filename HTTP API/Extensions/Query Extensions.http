@@ -6,7 +6,7 @@
 
 ### Query Extensions
 
-GET https://{{host}}/{{project-key}}/extensions
+GET https://api.{{host}}/{{project-key}}/extensions
 #?sort=
 #&limit=
 #&offset=

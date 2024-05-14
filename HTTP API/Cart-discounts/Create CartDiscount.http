@@ -7,7 +7,7 @@
 ### Create CartDiscount
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/cart-discounts
+POST https://api.{{host}}/{{project-key}}/cart-discounts
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

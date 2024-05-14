@@ -8,7 +8,7 @@
 @review-key = 
 @review-version = 
 
-DELETE https://{{host}}/{{project-key}}/reviews/key={{review-key}}
+DELETE https://api.{{host}}/{{project-key}}/reviews/key={{review-key}}
 #?dataErasure=
 #&version={{review-version}}
 #&expand=

@@ -6,7 +6,7 @@
 
 ### head ByProjectKeyShippingMethodsMatchingLocation
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-location
+HEAD https://api.{{host}}/{{project-key}}/shipping-methods/matching-location
 #?country=
 #&state=
 #&currency=

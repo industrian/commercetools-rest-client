@@ -7,5 +7,5 @@
 ### Check BusinessUnit exists by key
 @business-unit-key = 
 
-HEAD https://{{host}}/{{project-key}}/business-units/key={{business-unit-key}}
+HEAD https://api.{{host}}/{{project-key}}/business-units/key={{business-unit-key}}
 Authorization: Bearer {{ctp_access_token}}

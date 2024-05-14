@@ -9,7 +9,7 @@
 @review-version = 
 @product-id = 
 
-POST https://{{host}}/{{project-key}}/reviews/{{review-id}}
+POST https://api.{{host}}/{{project-key}}/reviews/{{review-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

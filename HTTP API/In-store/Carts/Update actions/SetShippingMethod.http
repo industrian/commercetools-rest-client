@@ -10,7 +10,7 @@
 @cart-version = 
 @shipping-method-id = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

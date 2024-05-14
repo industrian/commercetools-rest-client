@@ -6,7 +6,7 @@
 
 ### Query attribute-groups
 
-GET https://{{host}}/{{project-key}}/attribute-groups
+GET https://api.{{host}}/{{project-key}}/attribute-groups
 #?expand=
 #&sort=
 #&limit=

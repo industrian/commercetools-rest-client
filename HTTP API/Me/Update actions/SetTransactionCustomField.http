@@ -8,7 +8,7 @@
 @payment-id = 
 @payment-version = 
 
-POST https://{{host}}/{{project-key}}/me/payments/{{payment-id}}
+POST https://api.{{host}}/{{project-key}}/me/payments/{{payment-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

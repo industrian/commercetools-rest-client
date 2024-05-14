@@ -9,7 +9,7 @@
 @discount-code-version = 
 @cartDiscountId = 
 
-POST https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
+POST https://api.{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

@@ -10,7 +10,7 @@
 @quote-request-id = 
 @quote-request-version = 
 
-POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/quote-requests/{{quote-request-id}}
+POST https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/quote-requests/{{quote-request-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

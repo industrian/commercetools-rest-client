@@ -9,7 +9,7 @@
 @staged-quote-version = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
+POST https://api.{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

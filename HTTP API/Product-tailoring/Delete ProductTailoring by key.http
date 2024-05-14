@@ -8,7 +8,7 @@
 @product-tailoring-key = 
 @product-tailoring-version = 
 
-DELETE https://{{host}}/{{project-key}}/product-tailoring/key={{product-tailoring-key}}
+DELETE https://api.{{host}}/{{project-key}}/product-tailoring/key={{product-tailoring-key}}
 #?version={{product-tailoring-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

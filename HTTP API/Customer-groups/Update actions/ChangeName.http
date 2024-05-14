@@ -8,7 +8,7 @@
 @customer-group-id = 
 @customer-group-version = 
 
-POST https://{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}
+POST https://api.{{host}}/{{project-key}}/customer-groups/{{customer-group-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

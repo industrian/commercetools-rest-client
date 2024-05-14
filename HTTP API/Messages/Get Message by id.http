@@ -7,6 +7,6 @@
 ### Get Message by id
 @message-id = 
 
-GET https://{{host}}/{{project-key}}/messages/{{message-id}}
+GET https://api.{{host}}/{{project-key}}/messages/{{message-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

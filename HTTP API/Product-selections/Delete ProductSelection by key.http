@@ -8,7 +8,7 @@
 @product-selection-key = 
 @product-selection-version = 
 
-DELETE https://{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}
+DELETE https://api.{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}
 #?version={{product-selection-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

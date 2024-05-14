@@ -6,7 +6,7 @@
 
 ### Query orders
 
-GET https://{{host}}/{{project-key}}/orders
+GET https://api.{{host}}/{{project-key}}/orders
 #?expand=
 #&sort=
 #&limit=

@@ -6,7 +6,7 @@
 
 ### Create Type
 
-POST https://{{host}}/{{project-key}}/types
+POST https://api.{{host}}/{{project-key}}/types
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

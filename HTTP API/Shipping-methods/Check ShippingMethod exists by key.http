@@ -7,5 +7,5 @@
 ### Check ShippingMethod exists by key
 @shipping-method-key = 
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/key={{shipping-method-key}}
+HEAD https://api.{{host}}/{{project-key}}/shipping-methods/key={{shipping-method-key}}
 Authorization: Bearer {{ctp_access_token}}

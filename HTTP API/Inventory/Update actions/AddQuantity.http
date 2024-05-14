@@ -8,7 +8,7 @@
 @inventory-id = 
 @inventory-version = 
 
-POST https://{{host}}/{{project-key}}/inventory/{{inventory-id}}
+POST https://api.{{host}}/{{project-key}}/inventory/{{inventory-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

@@ -8,7 +8,7 @@
 @business-unit-id = 
 @business-unit-version = 
 
-POST https://{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
+POST https://api.{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

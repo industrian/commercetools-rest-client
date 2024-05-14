@@ -6,6 +6,6 @@
 
 ### Check staged-quotes are existing
 
-HEAD https://{{host}}/{{project-key}}/staged-quotes
+HEAD https://api.{{host}}/{{project-key}}/staged-quotes
 #?where=
 Authorization: Bearer {{ctp_access_token}}

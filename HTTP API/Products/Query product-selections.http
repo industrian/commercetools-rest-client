@@ -7,7 +7,7 @@
 ### Query product-selections
 @product-id = 
 
-GET https://{{host}}/{{project-key}}/products/{{product-id}}/product-selections
+GET https://api.{{host}}/{{project-key}}/products/{{product-id}}/product-selections
 #?expand=
 #&sort=
 #&limit=

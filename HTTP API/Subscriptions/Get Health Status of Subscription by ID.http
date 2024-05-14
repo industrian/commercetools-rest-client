@@ -7,5 +7,5 @@
 ### Get Health Status of Subscription by ID
 @subscription-id = 
 
-GET https://{{host}}/{{project-key}}/subscriptions/{{subscription-id}}/health
+GET https://api.{{host}}/{{project-key}}/subscriptions/{{subscription-id}}/health
 Authorization: Bearer {{ctp_access_token}}

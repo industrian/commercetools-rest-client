@@ -7,5 +7,5 @@
 ### Check Store exists by key
 @store-key = 
 
-HEAD https://{{host}}/{{project-key}}/stores/key={{store-key}}
+HEAD https://api.{{host}}/{{project-key}}/stores/key={{store-key}}
 Authorization: Bearer {{ctp_access_token}}

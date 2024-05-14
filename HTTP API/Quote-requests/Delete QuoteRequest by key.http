@@ -8,7 +8,7 @@
 @quote-request-key = 
 @quote-request-version = 
 
-DELETE https://{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
+DELETE https://api.{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
 #?dataErasure=
 #&version={{quote-request-version}}
 #&expand=

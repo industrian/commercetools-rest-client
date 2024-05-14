@@ -6,6 +6,6 @@
 
 ### Check states are existing
 
-HEAD https://{{host}}/{{project-key}}/states
+HEAD https://api.{{host}}/{{project-key}}/states
 #?where=
 Authorization: Bearer {{ctp_access_token}}

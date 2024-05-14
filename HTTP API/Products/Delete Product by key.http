@@ -8,7 +8,7 @@
 @product-key = 
 @product-version = 
 
-DELETE https://{{host}}/{{project-key}}/products/key={{product-key}}
+DELETE https://api.{{host}}/{{project-key}}/products/key={{product-key}}
 #?priceCurrency=
 #&priceCountry=
 #&priceCustomerGroup=

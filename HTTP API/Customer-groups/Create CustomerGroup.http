@@ -6,7 +6,7 @@
 
 ### Create CustomerGroup
 
-POST https://{{host}}/{{project-key}}/customer-groups
+POST https://api.{{host}}/{{project-key}}/customer-groups
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

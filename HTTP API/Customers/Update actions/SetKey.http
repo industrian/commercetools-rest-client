@@ -8,7 +8,7 @@
 @customer-id = 
 @customer-version = 
 
-POST https://{{host}}/{{project-key}}/customers/{{customer-id}}
+POST https://api.{{host}}/{{project-key}}/customers/{{customer-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

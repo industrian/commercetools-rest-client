@@ -10,7 +10,7 @@
 @lineItemId = 
 @addressKey = 
 
-POST https://{{host}}/{{project-key}}/me/carts/{{cart-id}}
+POST https://api.{{host}}/{{project-key}}/me/carts/{{cart-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

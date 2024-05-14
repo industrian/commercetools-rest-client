@@ -6,6 +6,6 @@
 
 ### head ByProjectKeyShippingMethodsMatchingCart
 
-HEAD https://{{host}}/{{project-key}}/shipping-methods/matching-cart
+HEAD https://api.{{host}}/{{project-key}}/shipping-methods/matching-cart
 #?cartId=
 Authorization: Bearer {{ctp_access_token}}

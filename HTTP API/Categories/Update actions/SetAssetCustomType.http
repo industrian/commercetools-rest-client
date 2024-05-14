@@ -10,7 +10,7 @@
 @assetId = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/categories/{{category-id}}
+POST https://api.{{host}}/{{project-key}}/categories/{{category-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

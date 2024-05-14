@@ -7,5 +7,5 @@
 ### Delete ApiClient by ID
 @api-client-id = 
 
-DELETE https://{{host}}/{{project-key}}/api-clients/{{api-client-id}}
+DELETE https://api.{{host}}/{{project-key}}/api-clients/{{api-client-id}}
 Authorization: Bearer {{ctp_access_token}}

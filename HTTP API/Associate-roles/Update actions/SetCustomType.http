@@ -9,7 +9,7 @@
 @associate-role-version = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/associate-roles/{{associate-role-id}}
+POST https://api.{{host}}/{{project-key}}/associate-roles/{{associate-role-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

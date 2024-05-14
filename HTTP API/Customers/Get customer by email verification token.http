@@ -7,6 +7,6 @@
 ### Get customer by email verification token
 @email-token = 
 
-GET https://{{host}}/{{project-key}}/customers/email-token={{email-token}}
+GET https://api.{{host}}/{{project-key}}/customers/email-token={{email-token}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -6,6 +6,6 @@
 
 ### Check categories are existing
 
-HEAD https://{{host}}/{{project-key}}/categories
+HEAD https://api.{{host}}/{{project-key}}/categories
 #?where=
 Authorization: Bearer {{ctp_access_token}}

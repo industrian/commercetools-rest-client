@@ -6,6 +6,6 @@
 
 ### Check shopping-lists are existing
 
-HEAD https://{{host}}/{{project-key}}/shopping-lists
+HEAD https://api.{{host}}/{{project-key}}/shopping-lists
 #?where=
 Authorization: Bearer {{ctp_access_token}}

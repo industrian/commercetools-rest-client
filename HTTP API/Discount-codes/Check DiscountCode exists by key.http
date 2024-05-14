@@ -7,5 +7,5 @@
 ### Check DiscountCode exists by key
 @discount-code-key = 
 
-HEAD https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
+HEAD https://api.{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,7 @@
 
 ### Create Product
 
-POST https://{{host}}/{{project-key}}/products
+POST https://api.{{host}}/{{project-key}}/products
 #?priceCurrency=
 #&priceCountry=
 #&priceCustomerGroup=

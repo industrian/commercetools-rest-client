@@ -6,7 +6,7 @@
 
 ### Create Zone
 
-POST https://{{host}}/{{project-key}}/zones
+POST https://api.{{host}}/{{project-key}}/zones
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

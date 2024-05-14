@@ -6,7 +6,7 @@
 
 ### Create ProductSelection
 
-POST https://{{host}}/{{project-key}}/product-selections
+POST https://api.{{host}}/{{project-key}}/product-selections
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

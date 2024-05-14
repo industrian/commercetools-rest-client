@@ -7,7 +7,7 @@
 ### Upload a Product image
 @product-id = 
 
-POST https://{{host}}/{{project-key}}/products/{{product-id}}/images
+POST https://api.{{host}}/{{project-key}}/products/{{product-id}}/images
 #?filename=
 #&variant=
 #&sku=

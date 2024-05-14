@@ -6,7 +6,7 @@
 
 ### Create BusinessUnit
 
-POST https://{{host}}/{{project-key}}/business-units
+POST https://api.{{host}}/{{project-key}}/business-units
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

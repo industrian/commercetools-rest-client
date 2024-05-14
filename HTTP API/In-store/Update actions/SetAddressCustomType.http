@@ -11,7 +11,7 @@
 @type-id = 
 @address-id = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/customers/{{customer-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

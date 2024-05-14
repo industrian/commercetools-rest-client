@@ -6,7 +6,7 @@
 
 ### Create Channel
 
-POST https://{{host}}/{{project-key}}/channels
+POST https://api.{{host}}/{{project-key}}/channels
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

@@ -7,7 +7,7 @@
 ### Get Product by key
 @product-key = 
 
-GET https://{{host}}/{{project-key}}/products/key={{product-key}}
+GET https://api.{{host}}/{{project-key}}/products/key={{product-key}}
 #?priceCurrency=
 #&priceCountry=
 #&priceCustomerGroup=

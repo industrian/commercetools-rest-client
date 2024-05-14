@@ -8,7 +8,7 @@
 @customer-key = 
 @customer-version = 
 
-DELETE https://{{host}}/{{project-key}}/customers/key={{customer-key}}
+DELETE https://api.{{host}}/{{project-key}}/customers/key={{customer-key}}
 #?dataErasure=
 #&version={{customer-version}}
 #&expand=

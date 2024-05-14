@@ -9,7 +9,7 @@
 @store-version = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/stores/{{store-id}}
+POST https://api.{{host}}/{{project-key}}/stores/{{store-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

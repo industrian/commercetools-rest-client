@@ -8,7 +8,7 @@
 @associate-role-id = 
 @associate-role-version = 
 
-DELETE https://{{host}}/{{project-key}}/associate-roles/{{associate-role-id}}
+DELETE https://api.{{host}}/{{project-key}}/associate-roles/{{associate-role-id}}
 #?version={{associate-role-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -7,5 +7,5 @@
 ### Check StagedQuote exists by key
 @staged-quote-key = 
 
-HEAD https://{{host}}/{{project-key}}/staged-quotes/key={{staged-quote-key}}
+HEAD https://api.{{host}}/{{project-key}}/staged-quotes/key={{staged-quote-key}}
 Authorization: Bearer {{ctp_access_token}}

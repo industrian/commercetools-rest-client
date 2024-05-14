@@ -7,5 +7,5 @@
 ### Check StagedQuote exists by id
 @staged-quote-id = 
 
-HEAD https://{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
+HEAD https://api.{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
 Authorization: Bearer {{ctp_access_token}}

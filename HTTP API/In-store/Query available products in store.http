@@ -7,7 +7,7 @@
 ### Query available products in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-selection-assignments
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/product-selection-assignments
 #?limit=
 #&offset=
 #&withTotal=

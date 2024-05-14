@@ -6,7 +6,7 @@
 
 ### Query carts
 
-GET https://{{host}}/{{project-key}}/carts
+GET https://api.{{host}}/{{project-key}}/carts
 #?expand=
 #&sort=
 #&limit=

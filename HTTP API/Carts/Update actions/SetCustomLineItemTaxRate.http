@@ -9,7 +9,7 @@
 @cart-version = 
 @customLineItemId = 
 
-POST https://{{host}}/{{project-key}}/carts/{{cart-id}}
+POST https://api.{{host}}/{{project-key}}/carts/{{cart-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

@@ -6,7 +6,7 @@
 
 ### Query associate-roles
 
-GET https://{{host}}/{{project-key}}/associate-roles
+GET https://api.{{host}}/{{project-key}}/associate-roles
 #?expand=
 #&sort=
 #&limit=

@@ -6,7 +6,7 @@
 
 ### Search Products by get
 
-GET https://{{host}}/{{project-key}}/product-projections/search
+GET https://api.{{host}}/{{project-key}}/product-projections/search
 #?fuzzy=
 #&fuzzyLevel=
 #&markMatchingVariants=

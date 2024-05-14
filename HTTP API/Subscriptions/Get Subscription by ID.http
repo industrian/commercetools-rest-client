@@ -7,5 +7,5 @@
 ### Get Subscription by ID
 @subscription-id = 
 
-GET https://{{host}}/{{project-key}}/subscriptions/{{subscription-id}}
+GET https://api.{{host}}/{{project-key}}/subscriptions/{{subscription-id}}
 Authorization: Bearer {{ctp_access_token}}

@@ -9,7 +9,7 @@
 @quote-request-version = 
 @state-id = 
 
-POST https://{{host}}/{{project-key}}/quote-requests/{{quote-request-id}}
+POST https://api.{{host}}/{{project-key}}/quote-requests/{{quote-request-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

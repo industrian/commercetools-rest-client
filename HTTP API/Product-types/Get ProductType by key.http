@@ -7,6 +7,6 @@
 ### Get ProductType by key
 @product-type-key = 
 
-GET https://{{host}}/{{project-key}}/product-types/key={{product-type-key}}
+GET https://api.{{host}}/{{project-key}}/product-types/key={{product-type-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

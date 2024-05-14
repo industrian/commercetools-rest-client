@@ -6,7 +6,7 @@
 
 ### Query staged-quotes
 
-GET https://{{host}}/{{project-key}}/staged-quotes
+GET https://api.{{host}}/{{project-key}}/staged-quotes
 #?expand=
 #&sort=
 #&limit=

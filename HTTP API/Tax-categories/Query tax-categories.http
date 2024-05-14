@@ -6,7 +6,7 @@
 
 ### Query tax-categories
 
-GET https://{{host}}/{{project-key}}/tax-categories
+GET https://api.{{host}}/{{project-key}}/tax-categories
 #?expand=
 #&sort=
 #&limit=

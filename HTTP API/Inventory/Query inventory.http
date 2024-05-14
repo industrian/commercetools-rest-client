@@ -6,7 +6,7 @@
 
 ### Query inventory
 
-GET https://{{host}}/{{project-key}}/inventory
+GET https://api.{{host}}/{{project-key}}/inventory
 #?expand=
 #&sort=
 #&limit=

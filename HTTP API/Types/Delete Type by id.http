@@ -8,7 +8,7 @@
 @type-id = 
 @type-version = 
 
-DELETE https://{{host}}/{{project-key}}/types/{{type-id}}
+DELETE https://api.{{host}}/{{project-key}}/types/{{type-id}}
 #?version={{type-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

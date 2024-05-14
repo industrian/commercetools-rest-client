@@ -6,7 +6,7 @@
 
 ### Query product-tailoring
 
-GET https://{{host}}/{{project-key}}/product-tailoring
+GET https://api.{{host}}/{{project-key}}/product-tailoring
 #?expand=
 #&sort=
 #&limit=

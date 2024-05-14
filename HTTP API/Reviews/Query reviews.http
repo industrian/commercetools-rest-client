@@ -6,7 +6,7 @@
 
 ### Query reviews
 
-GET https://{{host}}/{{project-key}}/reviews
+GET https://api.{{host}}/{{project-key}}/reviews
 #?expand=
 #&sort=
 #&limit=

@@ -6,6 +6,6 @@
 
 ### Check types are existing
 
-HEAD https://{{host}}/{{project-key}}/types
+HEAD https://api.{{host}}/{{project-key}}/types
 #?where=
 Authorization: Bearer {{ctp_access_token}}

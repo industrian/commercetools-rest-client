@@ -6,7 +6,7 @@
 
 ### Query shopping-lists
 
-GET https://{{host}}/{{project-key}}/shopping-lists
+GET https://api.{{host}}/{{project-key}}/shopping-lists
 #?expand=
 #&sort=
 #&limit=

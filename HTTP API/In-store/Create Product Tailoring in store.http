@@ -7,7 +7,7 @@
 ### Create Product Tailoring in store
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

@@ -6,7 +6,7 @@
 
 ### Get ShippingMethods for a cart
 
-GET https://{{host}}/{{project-key}}/shipping-methods/matching-cart
+GET https://api.{{host}}/{{project-key}}/shipping-methods/matching-cart
 #?cartId=
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

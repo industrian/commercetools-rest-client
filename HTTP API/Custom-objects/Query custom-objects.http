@@ -6,7 +6,7 @@
 
 ### Query custom-objects
 
-GET https://{{host}}/{{project-key}}/custom-objects
+GET https://api.{{host}}/{{project-key}}/custom-objects
 #?expand=
 #&sort=
 #&limit=

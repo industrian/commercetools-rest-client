@@ -7,6 +7,6 @@
 ### Get ShippingMethod by id
 @shipping-method-id = 
 
-GET https://{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
+GET https://api.{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

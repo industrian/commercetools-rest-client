@@ -6,7 +6,7 @@
 
 ### Query stores
 
-GET https://{{host}}/{{project-key}}/stores
+GET https://api.{{host}}/{{project-key}}/stores
 #?expand=
 #&sort=
 #&limit=

@@ -8,7 +8,7 @@
 @zone-key = 
 @zone-version = 
 
-DELETE https://{{host}}/{{project-key}}/zones/key={{zone-key}}
+DELETE https://api.{{host}}/{{project-key}}/zones/key={{zone-key}}
 #?version={{zone-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

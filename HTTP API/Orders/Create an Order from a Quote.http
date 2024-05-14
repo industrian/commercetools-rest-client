@@ -6,7 +6,7 @@
 
 ### Create an Order from a Quote
 
-POST https://{{host}}/{{project-key}}/orders/quotes
+POST https://api.{{host}}/{{project-key}}/orders/quotes
 Authorization: Bearer {{ctp_access_token}}
 
 {

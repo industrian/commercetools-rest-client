@@ -6,6 +6,6 @@
 
 ### Check inventory are existing
 
-HEAD https://{{host}}/{{project-key}}/inventory
+HEAD https://api.{{host}}/{{project-key}}/inventory
 #?where=
 Authorization: Bearer {{ctp_access_token}}

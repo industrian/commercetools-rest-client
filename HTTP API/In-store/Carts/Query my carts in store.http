@@ -7,7 +7,7 @@
 ### Query my carts in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
 #?expand=
 #&sort=
 #&limit=

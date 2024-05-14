@@ -8,7 +8,7 @@
 @shipping-method-id = 
 @shipping-method-version = 
 
-DELETE https://{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
+DELETE https://api.{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
 #?version={{shipping-method-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

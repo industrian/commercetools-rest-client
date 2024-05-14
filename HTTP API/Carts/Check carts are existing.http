@@ -6,6 +6,6 @@
 
 ### Check carts are existing
 
-HEAD https://{{host}}/{{project-key}}/carts
+HEAD https://api.{{host}}/{{project-key}}/carts
 #?where=
 Authorization: Bearer {{ctp_access_token}}

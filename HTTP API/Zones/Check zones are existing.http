@@ -6,6 +6,6 @@
 
 ### Check zones are existing
 
-HEAD https://{{host}}/{{project-key}}/zones
+HEAD https://api.{{host}}/{{project-key}}/zones
 #?where=
 Authorization: Bearer {{ctp_access_token}}

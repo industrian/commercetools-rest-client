@@ -7,6 +7,6 @@
 ### Get ShippingMethod by key
 @shipping-method-key = 
 
-GET https://{{host}}/{{project-key}}/shipping-methods/key={{shipping-method-key}}
+GET https://api.{{host}}/{{project-key}}/shipping-methods/key={{shipping-method-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

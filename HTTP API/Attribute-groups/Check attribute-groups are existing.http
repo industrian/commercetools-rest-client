@@ -6,6 +6,6 @@
 
 ### Check attribute-groups are existing
 
-HEAD https://{{host}}/{{project-key}}/attribute-groups
+HEAD https://api.{{host}}/{{project-key}}/attribute-groups
 #?where=
 Authorization: Bearer {{ctp_access_token}}

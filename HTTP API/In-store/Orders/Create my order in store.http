@@ -7,7 +7,7 @@
 ### Create my order in store
 @store-key = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

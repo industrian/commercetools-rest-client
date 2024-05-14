@@ -8,7 +8,7 @@
 @state-key = 
 @state-version = 
 
-DELETE https://{{host}}/{{project-key}}/states/key={{state-key}}
+DELETE https://api.{{host}}/{{project-key}}/states/key={{state-key}}
 #?version={{state-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

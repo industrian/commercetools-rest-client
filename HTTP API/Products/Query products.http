@@ -6,7 +6,7 @@
 
 ### Query products
 
-GET https://{{host}}/{{project-key}}/products
+GET https://api.{{host}}/{{project-key}}/products
 #?where=
 #&priceCurrency=
 #&priceCountry=

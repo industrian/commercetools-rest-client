@@ -7,5 +7,5 @@
 ### Get import-container
 @import-container-key = 
 
-GET https://{{host}}/{{project-key}}/import-containers/{{import-container-key}}
+GET https://import.{{host}}/{{project-key}}/import-containers/{{import-container-key}}
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,7 @@
 
 ### Create Quote
 
-POST https://{{host}}/{{project-key}}/quotes
+POST https://api.{{host}}/{{project-key}}/quotes
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

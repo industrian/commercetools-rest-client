@@ -6,7 +6,7 @@
 
 ### Query shipping-methods
 
-GET https://{{host}}/{{project-key}}/shipping-methods
+GET https://api.{{host}}/{{project-key}}/shipping-methods
 #?expand=
 #&sort=
 #&limit=

@@ -8,6 +8,6 @@
 @subscription-key = 
 @subscription-version = 
 
-DELETE https://{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
+DELETE https://api.{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
 #?version={{subscription-version}}
 Authorization: Bearer {{ctp_access_token}}

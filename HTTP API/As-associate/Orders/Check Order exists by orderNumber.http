@@ -9,5 +9,5 @@
 @business-unit-key = 
 @order-number = 
 
-HEAD https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/order-number={{order-number}}
+HEAD https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/orders/order-number={{order-number}}
 Authorization: Bearer {{ctp_access_token}}

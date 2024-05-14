@@ -6,7 +6,7 @@
 
 ### Query zones
 
-GET https://{{host}}/{{project-key}}/zones
+GET https://api.{{host}}/{{project-key}}/zones
 #?expand=
 #&sort=
 #&limit=

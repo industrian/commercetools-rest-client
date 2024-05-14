@@ -6,7 +6,7 @@
 
 ### Query quote-requests
 
-GET https://{{host}}/{{project-key}}/quote-requests
+GET https://api.{{host}}/{{project-key}}/quote-requests
 #?expand=
 #&sort=
 #&limit=

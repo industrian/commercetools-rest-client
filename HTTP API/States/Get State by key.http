@@ -7,6 +7,6 @@
 ### Get State by key
 @state-key = 
 
-GET https://{{host}}/{{project-key}}/states/key={{state-key}}
+GET https://api.{{host}}/{{project-key}}/states/key={{state-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

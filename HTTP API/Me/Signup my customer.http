@@ -6,7 +6,7 @@
 
 ### Signup my customer
 
-POST https://{{host}}/{{project-key}}/me/signup
+POST https://api.{{host}}/{{project-key}}/me/signup
 Authorization: Bearer {{ctp_access_token}}
 
 {

@@ -6,7 +6,7 @@
 
 ### Query categories
 
-GET https://{{host}}/{{project-key}}/categories
+GET https://api.{{host}}/{{project-key}}/categories
 #?expand=
 #&sort=
 #&limit=

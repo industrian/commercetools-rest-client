@@ -7,6 +7,6 @@
 ### Get Channel by id
 @channel-id = 
 
-GET https://{{host}}/{{project-key}}/channels/{{channel-id}}
+GET https://api.{{host}}/{{project-key}}/channels/{{channel-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

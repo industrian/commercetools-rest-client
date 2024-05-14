@@ -8,7 +8,7 @@
 @order-number = 
 @order-version = 
 
-DELETE https://{{host}}/{{project-key}}/orders/order-number={{order-number}}
+DELETE https://api.{{host}}/{{project-key}}/orders/order-number={{order-number}}
 #?dataErasure=
 #&version={{order-version}}
 #&expand=

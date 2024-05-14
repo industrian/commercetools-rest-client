@@ -8,7 +8,7 @@
 @quote-request-id = 
 @quote-request-version = 
 
-POST https://{{host}}/{{project-key}}/me/quote-requests/{{quote-request-id}}
+POST https://api.{{host}}/{{project-key}}/me/quote-requests/{{quote-request-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

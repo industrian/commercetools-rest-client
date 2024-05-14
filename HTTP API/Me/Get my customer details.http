@@ -6,7 +6,7 @@
 
 ### Get my customer details
 
-GET https://{{host}}/{{project-key}}/me
+GET https://api.{{host}}/{{project-key}}/me
 #?sort=
 #&limit=
 #&offset=

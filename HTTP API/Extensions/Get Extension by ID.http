@@ -7,5 +7,5 @@
 ### Get Extension by ID
 @extension-id = 
 
-GET https://{{host}}/{{project-key}}/extensions/{{extension-id}}
+GET https://api.{{host}}/{{project-key}}/extensions/{{extension-id}}
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,7 @@
 
 ### Query states
 
-GET https://{{host}}/{{project-key}}/states
+GET https://api.{{host}}/{{project-key}}/states
 #?expand=
 #&sort=
 #&limit=

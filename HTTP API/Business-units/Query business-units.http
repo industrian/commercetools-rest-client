@@ -6,7 +6,7 @@
 
 ### Query business-units
 
-GET https://{{host}}/{{project-key}}/business-units
+GET https://api.{{host}}/{{project-key}}/business-units
 #?expand=
 #&sort=
 #&limit=

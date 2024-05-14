@@ -7,6 +7,6 @@
 ### Get StagedQuote by id
 @staged-quote-id = 
 
-GET https://{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
+GET https://api.{{host}}/{{project-key}}/staged-quotes/{{staged-quote-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

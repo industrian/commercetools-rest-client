@@ -6,7 +6,7 @@
 
 ### Query payments
 
-GET https://{{host}}/{{project-key}}/payments
+GET https://api.{{host}}/{{project-key}}/payments
 #?expand=
 #&sort=
 #&limit=

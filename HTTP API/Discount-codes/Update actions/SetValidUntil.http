@@ -8,7 +8,7 @@
 @discount-code-id = 
 @discount-code-version = 
 
-POST https://{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
+POST https://api.{{host}}/{{project-key}}/discount-codes/{{discount-code-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

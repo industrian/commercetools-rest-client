@@ -8,7 +8,7 @@
 @product-id = 
 @product-version = 
 
-POST https://{{host}}/{{project-key}}/products/{{product-id}}
+POST https://api.{{host}}/{{project-key}}/products/{{product-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

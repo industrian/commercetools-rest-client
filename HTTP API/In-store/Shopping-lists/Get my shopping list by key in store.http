@@ -8,6 +8,6 @@
 @store-key = 
 @shopping-list-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/key={{shopping-list-key}}
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/key={{shopping-list-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

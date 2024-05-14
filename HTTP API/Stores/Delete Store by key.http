@@ -8,7 +8,7 @@
 @store-key = 
 @store-version = 
 
-DELETE https://{{host}}/{{project-key}}/stores/key={{store-key}}
+DELETE https://api.{{host}}/{{project-key}}/stores/key={{store-key}}
 #?version={{store-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

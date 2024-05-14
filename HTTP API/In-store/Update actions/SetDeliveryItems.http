@@ -11,7 +11,7 @@
 @deliveryId = 
 @itemId = 
 
-POST https://{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

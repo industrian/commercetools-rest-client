@@ -9,7 +9,7 @@
 @cart-id = 
 @cart-version = 
 
-DELETE https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
+DELETE https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
 #?version={{cart-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

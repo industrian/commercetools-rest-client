@@ -6,7 +6,7 @@
 
 ### Create TaxCategory
 
-POST https://{{host}}/{{project-key}}/tax-categories
+POST https://api.{{host}}/{{project-key}}/tax-categories
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

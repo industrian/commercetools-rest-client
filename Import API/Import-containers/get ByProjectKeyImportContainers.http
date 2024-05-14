@@ -6,7 +6,7 @@
 
 ### get ByProjectKeyImportContainers
 
-GET https://{{host}}/{{project-key}}/import-containers
+GET https://import.{{host}}/{{project-key}}/import-containers
 #?limit=
 #&offset=
 #&sort=

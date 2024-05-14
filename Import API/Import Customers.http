@@ -7,7 +7,7 @@
 ### Import import-container
 @import-container-key = 
 
-POST https://{{host}}/{{project-key}}/customers/import-containers/{{import-container-key}}
+POST https://import.{{host}}/{{project-key}}/customers/import-containers/{{import-container-key}}
 Authorization: Bearer {{ctp_access_token}}
 
 {

@@ -7,6 +7,6 @@
 ### Get AttributeGroup by id
 @attribute-group-id = 
 
-GET https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
+GET https://api.{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

@@ -6,7 +6,7 @@
 
 ### Create StandalonePrice
 
-POST https://{{host}}/{{project-key}}/standalone-prices
+POST https://api.{{host}}/{{project-key}}/standalone-prices
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

@@ -6,6 +6,6 @@
 
 ### Check channels are existing
 
-HEAD https://{{host}}/{{project-key}}/channels
+HEAD https://api.{{host}}/{{project-key}}/channels
 #?where=
 Authorization: Bearer {{ctp_access_token}}

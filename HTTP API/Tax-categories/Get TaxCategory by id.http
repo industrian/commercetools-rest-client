@@ -7,6 +7,6 @@
 ### Get TaxCategory by id
 @tax-category-id = 
 
-GET https://{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}
+GET https://api.{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

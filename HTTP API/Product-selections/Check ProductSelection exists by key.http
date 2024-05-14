@@ -7,5 +7,5 @@
 ### Check ProductSelection exists by key
 @product-selection-key = 
 
-HEAD https://{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}
+HEAD https://api.{{host}}/{{project-key}}/product-selections/key={{product-selection-key}}
 Authorization: Bearer {{ctp_access_token}}

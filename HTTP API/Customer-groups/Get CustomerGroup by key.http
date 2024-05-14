@@ -7,6 +7,6 @@
 ### Get CustomerGroup by key
 @customer-group-key = 
 
-GET https://{{host}}/{{project-key}}/customer-groups/key={{customer-group-key}}
+GET https://api.{{host}}/{{project-key}}/customer-groups/key={{customer-group-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

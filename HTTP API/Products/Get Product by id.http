@@ -7,7 +7,7 @@
 ### Get Product by id
 @product-id = 
 
-GET https://{{host}}/{{project-key}}/products/{{product-id}}
+GET https://api.{{host}}/{{project-key}}/products/{{product-id}}
 #?priceCurrency=
 #&priceCountry=
 #&priceCustomerGroup=

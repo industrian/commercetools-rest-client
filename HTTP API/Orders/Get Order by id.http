@@ -7,6 +7,6 @@
 ### Get Order by id
 @order-id = 
 
-GET https://{{host}}/{{project-key}}/orders/{{order-id}}
+GET https://api.{{host}}/{{project-key}}/orders/{{order-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

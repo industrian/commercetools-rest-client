@@ -7,7 +7,7 @@
 ### Query available product tailoring in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/product-tailoring
 #?limit=
 #&offset=
 #&withTotal=

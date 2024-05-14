@@ -9,7 +9,7 @@
 @shipping-method-version = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
+POST https://api.{{host}}/{{project-key}}/shipping-methods/{{shipping-method-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

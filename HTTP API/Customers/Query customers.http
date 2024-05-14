@@ -6,7 +6,7 @@
 
 ### Query customers
 
-GET https://{{host}}/{{project-key}}/customers
+GET https://api.{{host}}/{{project-key}}/customers
 #?expand=
 #&sort=
 #&limit=

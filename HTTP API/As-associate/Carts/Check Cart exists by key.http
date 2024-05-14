@@ -9,5 +9,5 @@
 @business-unit-key = 
 @cart-key = 
 
-HEAD https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/key={{cart-key}}
+HEAD https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/key={{cart-key}}
 Authorization: Bearer {{ctp_access_token}}

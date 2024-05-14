@@ -8,7 +8,7 @@
 @attribute-group-id = 
 @attribute-group-version = 
 
-POST https://{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
+POST https://api.{{host}}/{{project-key}}/attribute-groups/{{attribute-group-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

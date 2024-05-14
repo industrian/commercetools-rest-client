@@ -8,7 +8,7 @@
 @category-id = 
 @category-version = 
 
-DELETE https://{{host}}/{{project-key}}/categories/{{category-id}}
+DELETE https://api.{{host}}/{{project-key}}/categories/{{category-id}}
 #?version={{category-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

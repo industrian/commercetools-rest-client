@@ -7,5 +7,5 @@
 ### Check QuoteRequest exists by key
 @quote-request-key = 
 
-HEAD https://{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
+HEAD https://api.{{host}}/{{project-key}}/quote-requests/key={{quote-request-key}}
 Authorization: Bearer {{ctp_access_token}}

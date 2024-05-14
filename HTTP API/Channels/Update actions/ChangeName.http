@@ -8,7 +8,7 @@
 @channel-id = 
 @channel-version = 
 
-POST https://{{host}}/{{project-key}}/channels/{{channel-id}}
+POST https://api.{{host}}/{{project-key}}/channels/{{channel-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

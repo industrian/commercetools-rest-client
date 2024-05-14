@@ -7,7 +7,7 @@
 ### Query my orders in store
 @store-key = 
 
-GET https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/orders
 #?expand=
 #&sort=
 #&limit=

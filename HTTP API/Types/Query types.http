@@ -6,7 +6,7 @@
 
 ### Query types
 
-GET https://{{host}}/{{project-key}}/types
+GET https://api.{{host}}/{{project-key}}/types
 #?expand=
 #&sort=
 #&limit=

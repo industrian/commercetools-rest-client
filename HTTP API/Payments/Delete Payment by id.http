@@ -8,7 +8,7 @@
 @payment-id = 
 @payment-version = 
 
-DELETE https://{{host}}/{{project-key}}/payments/{{payment-id}}
+DELETE https://api.{{host}}/{{project-key}}/payments/{{payment-id}}
 #?dataErasure=
 #&version={{payment-version}}
 #&expand=

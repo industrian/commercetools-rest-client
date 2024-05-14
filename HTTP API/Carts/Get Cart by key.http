@@ -7,6 +7,6 @@
 ### Get Cart by key
 @cart-key = 
 
-GET https://{{host}}/{{project-key}}/carts/key={{cart-key}}
+GET https://api.{{host}}/{{project-key}}/carts/key={{cart-key}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

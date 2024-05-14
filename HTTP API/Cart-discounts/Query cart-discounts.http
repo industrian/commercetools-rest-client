@@ -6,7 +6,7 @@
 
 ### Query cart-discounts
 
-GET https://{{host}}/{{project-key}}/cart-discounts
+GET https://api.{{host}}/{{project-key}}/cart-discounts
 #?expand=
 #&sort=
 #&limit=

@@ -9,6 +9,6 @@
 @business-unit-key = 
 @approval-flow-id = 
 
-GET https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/approval-flows/{{approval-flow-id}}
+GET https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/approval-flows/{{approval-flow-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

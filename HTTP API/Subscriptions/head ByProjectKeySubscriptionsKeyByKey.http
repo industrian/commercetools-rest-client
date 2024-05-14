@@ -7,5 +7,5 @@
 ### head ByProjectKeySubscriptionsKeyByKey
 @subscription-key = 
 
-HEAD https://{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
+HEAD https://api.{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
 Authorization: Bearer {{ctp_access_token}}

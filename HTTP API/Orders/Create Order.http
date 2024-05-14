@@ -6,7 +6,7 @@
 
 ### Create Order
 
-POST https://{{host}}/{{project-key}}/orders
+POST https://api.{{host}}/{{project-key}}/orders
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

@@ -7,5 +7,5 @@
 ### head ByProjectKeyApiClientsByID
 @api-client-id = 
 
-HEAD https://{{host}}/{{project-key}}/api-clients/{{api-client-id}}
+HEAD https://api.{{host}}/{{project-key}}/api-clients/{{api-client-id}}
 Authorization: Bearer {{ctp_access_token}}

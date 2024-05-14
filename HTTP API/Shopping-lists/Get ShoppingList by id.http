@@ -7,6 +7,6 @@
 ### Get ShoppingList by id
 @shopping-list-id = 
 
-GET https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+GET https://api.{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

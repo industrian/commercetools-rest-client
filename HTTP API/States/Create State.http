@@ -6,7 +6,7 @@
 
 ### Create State
 
-POST https://{{host}}/{{project-key}}/states
+POST https://api.{{host}}/{{project-key}}/states
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

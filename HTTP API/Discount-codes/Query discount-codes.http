@@ -6,7 +6,7 @@
 
 ### Query discount-codes
 
-GET https://{{host}}/{{project-key}}/discount-codes
+GET https://api.{{host}}/{{project-key}}/discount-codes
 #?expand=
 #&sort=
 #&limit=

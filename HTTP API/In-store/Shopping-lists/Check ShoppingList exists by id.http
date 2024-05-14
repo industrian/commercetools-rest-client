@@ -8,5 +8,5 @@
 @store-key = 
 @shopping-list-id = 
 
-HEAD https://{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/{{shopping-list-id}}
+HEAD https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/shopping-lists/{{shopping-list-id}}
 Authorization: Bearer {{ctp_access_token}}

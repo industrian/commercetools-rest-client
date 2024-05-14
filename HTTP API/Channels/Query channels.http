@@ -6,7 +6,7 @@
 
 ### Query channels
 
-GET https://{{host}}/{{project-key}}/channels
+GET https://api.{{host}}/{{project-key}}/channels
 #?expand=
 #&sort=
 #&limit=

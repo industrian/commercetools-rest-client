@@ -8,7 +8,7 @@
 @standalone-price-id = 
 @standalone-price-version = 
 
-DELETE https://{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}
+DELETE https://api.{{host}}/{{project-key}}/standalone-prices/{{standalone-price-id}}
 #?version={{standalone-price-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

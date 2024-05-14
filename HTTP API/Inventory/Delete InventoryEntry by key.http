@@ -8,7 +8,7 @@
 @inventory-key = 
 @inventory-version = 
 
-DELETE https://{{host}}/{{project-key}}/inventory/key={{inventory-key}}
+DELETE https://api.{{host}}/{{project-key}}/inventory/key={{inventory-key}}
 #?version={{inventory-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

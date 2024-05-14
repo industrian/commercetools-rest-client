@@ -8,7 +8,7 @@
 @shopping-list-id = 
 @shopping-list-version = 
 
-DELETE https://{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+DELETE https://api.{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
 #?expand=
 #&dataErasure=
 #&version={{shopping-list-version}}

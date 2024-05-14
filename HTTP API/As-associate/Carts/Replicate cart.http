@@ -8,7 +8,7 @@
 @associate-id = 
 @business-unit-key = 
 
-POST https://{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/replicate
+POST https://api.{{host}}/{{project-key}}/as-associate/{{associate-id}}/in-business-unit/key={{business-unit-key}}/carts/replicate
 Authorization: Bearer {{ctp_access_token}}
 
 {

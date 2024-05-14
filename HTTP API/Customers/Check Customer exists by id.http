@@ -7,5 +7,5 @@
 ### Check Customer exists by id
 @customer-id = 
 
-HEAD https://{{host}}/{{project-key}}/customers/{{customer-id}}
+HEAD https://api.{{host}}/{{project-key}}/customers/{{customer-id}}
 Authorization: Bearer {{ctp_access_token}}

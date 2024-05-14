@@ -7,6 +7,6 @@
 ### Delete my Customer
 @me-version = 
 
-DELETE https://{{host}}/{{project-key}}/me
+DELETE https://api.{{host}}/{{project-key}}/me
 #?version={{me-version}}
 Authorization: Bearer {{ctp_access_token}}

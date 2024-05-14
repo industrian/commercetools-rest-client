@@ -9,7 +9,7 @@
 @business-unit-version = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/business-units/{{business-unit-id}}
+POST https://api.{{host}}/{{project-key}}/business-units/{{business-unit-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

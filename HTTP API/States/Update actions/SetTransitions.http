@@ -9,7 +9,7 @@
 @state-version = 
 @state-id2 = 
 
-POST https://{{host}}/{{project-key}}/states/{{state-id}}
+POST https://api.{{host}}/{{project-key}}/states/{{state-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

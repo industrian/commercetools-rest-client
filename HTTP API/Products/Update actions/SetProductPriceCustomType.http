@@ -10,7 +10,7 @@
 @priceId = 
 @type-id = 
 
-POST https://{{host}}/{{project-key}}/products/{{product-id}}
+POST https://api.{{host}}/{{project-key}}/products/{{product-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

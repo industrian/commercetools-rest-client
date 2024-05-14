@@ -8,7 +8,7 @@
 @discount-code-key = 
 @discount-code-version = 
 
-DELETE https://{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
+DELETE https://api.{{host}}/{{project-key}}/discount-codes/key={{discount-code-key}}
 #?dataErasure=
 #&version={{discount-code-version}}
 #&expand=

@@ -7,6 +7,6 @@
 ### Get Store by id
 @store-id = 
 
-GET https://{{host}}/{{project-key}}/stores/{{store-id}}
+GET https://api.{{host}}/{{project-key}}/stores/{{store-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}

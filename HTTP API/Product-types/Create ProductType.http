@@ -6,7 +6,7 @@
 
 ### Create ProductType
 
-POST https://{{host}}/{{project-key}}/product-types
+POST https://api.{{host}}/{{project-key}}/product-types
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

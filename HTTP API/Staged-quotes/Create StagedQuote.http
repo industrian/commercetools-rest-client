@@ -6,7 +6,7 @@
 
 ### Create StagedQuote
 
-POST https://{{host}}/{{project-key}}/staged-quotes
+POST https://api.{{host}}/{{project-key}}/staged-quotes
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 

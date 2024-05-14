@@ -9,7 +9,7 @@
 @tax-category-version = 
 @taxRateID = 
 
-POST https://{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}
+POST https://api.{{host}}/{{project-key}}/tax-categories/{{tax-category-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 

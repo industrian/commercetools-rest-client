@@ -8,7 +8,7 @@
 @cart-key = 
 @cart-version = 
 
-DELETE https://{{host}}/{{project-key}}/carts/key={{cart-key}}
+DELETE https://api.{{host}}/{{project-key}}/carts/key={{cart-key}}
 #?dataErasure=
 #&version={{cart-version}}
 #&expand=

@@ -6,7 +6,7 @@
 
 ### Query product-types
 
-GET https://{{host}}/{{project-key}}/product-types
+GET https://api.{{host}}/{{project-key}}/product-types
 #?expand=
 #&sort=
 #&limit=

@@ -7,5 +7,5 @@
 ### Get Subscription by key
 @subscription-key = 
 
-GET https://{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
+GET https://api.{{host}}/{{project-key}}/subscriptions/key={{subscription-key}}
 Authorization: Bearer {{ctp_access_token}}
