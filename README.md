@@ -18,28 +18,28 @@ You should consult the [commercetools documentation](https://docs.commercetools.
 # Set up
 
 1. Open the **Command Palette** and select **Preferences: Open User Settings (JSON)**.
-    ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
 
-2. If this file does not have an entry called `rest-client.environmentVariables`, then create one. When you start typing, you should be prompted to create it using autocomplete.
-    ![Screenshot 2024-05-14 at 09 08 31](https://github.com/industrian/commercetools-rest-client/assets/77231096/384ef2ad-cedc-4555-a0b9-9bec9afa6266)
+   ![Screenshot_30](https://github.com/industrian/commercetools-rest-client/assets/77231096/9184ba00-bbe0-48c8-9c64-fce71cc6845c)
 
-3. In `rest-client.environmentVariables`, add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
+3. If this file does not have an entry called `rest-client.environmentVariables`, then create one. When you start typing, you should be prompted to create it using autocomplete.
+
+   ![Screenshot 2024-05-14 at 09 08 31](https://github.com/industrian/commercetools-rest-client/assets/77231096/384ef2ad-cedc-4555-a0b9-9bec9afa6266)
+
+4. In `rest-client.environmentVariables`, add an object with your Project key as the name. This will set up an environment for the Project. The following fields and values must be added: 
     - `project-key`: the Project key
     - `client_secret`: your API Client secret
     - `client_id`: your API Client id
     - `auth_url`: the authorization URL of the region your Project is hosted with no trailing `/`. For example: `auth.europe-west1.gcp.commercetools.com`
-    - `host`: the API URL of the region your Project is hosted with no trailing `/`. For example: `api.europe-west1.gcp.commercetools.com`
+    - `host`: the URL of the region your Project is hosted. Do not include `api` or a trailing `/`. For example: `europe-west1.gcp.commercetools.com`
     - `scopes`: your API Client scopes
 
-For example:
+    For example:
 
-![Screenshot_31](https://github.com/industrian/commercetools-rest-client/assets/77231096/9ed1f03b-415a-4c70-a4a9-a119b40552a0)
+    ![image](https://github.com/industrian/commercetools-rest-client/assets/77231096/090076cf-03ef-483f-8846-e672ebc830e9)
 
 You can define multiple Projects within the settings file. These Projects can then be switched by clicking the Switch REST Client Environment button.
 
 ![Screenshot_36](https://github.com/industrian/commercetools-rest-client/assets/77231096/83d0f706-96d3-4c9f-b641-a50dba1b9622)
-
-
 
 # Making API calls
 
