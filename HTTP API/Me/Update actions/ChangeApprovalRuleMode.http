@@ -4,22 +4,20 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetCustomField
-@store-key = 
-@quote-id = 
-@quote-version = 
+### ChangeApprovalRuleMode
+@business-unit-id = 
+@business-unit-version = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/quotes/{{quote-id}}
+POST https://api.{{host}}/{{project-key}}/me/business-units/{{business-unit-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 
 {
-    "version": {{quote-version}},
+    "version": {{business-unit-version}},
     "actions": [
         {
-            "action" : "setCustomField",
-            "name" : "ExampleStringTypeField",
-            "value" : "TextString"
+            "action" : "changeApprovalRuleMode",
+            "approvalRuleMode" : "Explicit"
           }
     ]
 }

@@ -12,6 +12,5 @@ GET https://api.{{host}}/{{project-key}}/products/{{product-id}}
 #&priceCountry=
 #&priceCustomerGroup=
 #&priceChannel=
-#&localeProjection=
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

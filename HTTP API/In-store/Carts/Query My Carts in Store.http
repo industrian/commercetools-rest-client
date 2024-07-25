@@ -4,15 +4,15 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### Delete Product by id
-@product-id = 
-@product-version = 
+### Query My Carts in Store
+@store-key = 
 
-DELETE https://api.{{host}}/{{project-key}}/products/{{product-id}}
-#?priceCurrency=
-#&priceCountry=
-#&priceCustomerGroup=
-#&priceChannel=
-#&version={{product-version}}
-#&expand=
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
+#?expand=
+#&sort=
+#&limit=
+#&offset=
+#&withTotal=
+#&where=
+#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

@@ -4,22 +4,21 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetCustomField
+### SetSellerComment
 @store-key = 
-@quote-id = 
-@quote-version = 
+@staged-quote-id = 
+@staged-quote-version = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/quotes/{{quote-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/staged-quotes/{{staged-quote-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 
 {
-    "version": {{quote-version}},
+    "version": {{staged-quote-version}},
     "actions": [
         {
-            "action" : "setCustomField",
-            "name" : "ExampleStringTypeField",
-            "value" : "TextString"
+            "action" : "setSellerComment",
+            "sellerComment" : "Please let me know if this matches your expectations"
           }
     ]
 }

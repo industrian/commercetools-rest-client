@@ -12,7 +12,6 @@ GET https://api.{{host}}/{{project-key}}/products
 #&priceCountry=
 #&priceCustomerGroup=
 #&priceChannel=
-#&localeProjection=
 #&expand=
 #&sort=
 #&limit=

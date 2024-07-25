@@ -4,12 +4,12 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### Delete my cart by id in store
+### Delete a Product Tailoring by its Product ID from a specific Store
 @store-key = 
-@cart-id = 
-@cart-version = 
+@product-id = 
+@product-tailoring-version = 
 
-DELETE https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts/{{cart-id}}
-#?version={{cart-version}}
+DELETE https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/products/{{product-id}}/product-tailoring
+#?version={{product-tailoring-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

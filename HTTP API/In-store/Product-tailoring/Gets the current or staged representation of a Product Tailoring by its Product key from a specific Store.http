@@ -4,15 +4,10 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### Delete Product by id
-@product-id = 
-@product-version = 
+### Gets the current or staged representation of a Product Tailoring by its Product key from a specific Store
+@store-key = 
+@product-key = 
 
-DELETE https://api.{{host}}/{{project-key}}/products/{{product-id}}
-#?priceCurrency=
-#&priceCountry=
-#&priceCustomerGroup=
-#&priceChannel=
-#&version={{product-version}}
-#&expand=
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/products/key={{product-key}}/product-tailoring
+#?expand=
 Authorization: Bearer {{ctp_access_token}}

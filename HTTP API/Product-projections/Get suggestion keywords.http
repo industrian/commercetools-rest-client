@@ -7,11 +7,8 @@
 ### Get suggestion keywords
 
 GET https://api.{{host}}/{{project-key}}/product-projections/suggest
-#?fuzzy=
-#&/searchKeywords.[a-z]{2}(-[A-Z]{2})?/=
-#&sort=
+#?/searchKeywords.[a-z]{2}(-[A-Z]{2})?/=
 #&limit=
-#&offset=
-#&withTotal=
+#&fuzzy=
 #&staged=
 Authorization: Bearer {{ctp_access_token}}

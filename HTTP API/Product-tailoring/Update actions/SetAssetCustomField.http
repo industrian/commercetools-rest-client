@@ -4,23 +4,26 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetShippingCustomField
-@store-key = 
-@order-id = 
-@order-version = 
+### SetAssetCustomField
+@product-tailoring-id = 
+@product-tailoring-version = 
+@assetId = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
-#?expand=
+POST https://api.{{host}}/{{project-key}}/product-tailoring/{{product-tailoring-id}}
 Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
 
-{
-    "version": {{order-version}},
+    
+    {
+    "version": {{product-tailoring-version}},
     "actions": [
         {
-            "action" : "setShippingCustomField",
-            "shippingKey" : "shipping-key-express",
+            "action" : "setAssetCustomField",
+            "assetId" : "{{assetId}}",
+            "variantId" : 1,
             "name" : "ExampleStringTypeField",
             "value" : "TextString"
           }
     ]
 }
+

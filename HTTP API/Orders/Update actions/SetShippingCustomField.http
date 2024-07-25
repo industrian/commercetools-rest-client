@@ -5,15 +5,15 @@
     @ctp_access_token = {{auth.response.body.access_token}}
 
 ### SetShippingCustomField
-@store-key = 
 @order-id = 
 @order-version = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
-#?expand=
+POST https://api.{{host}}/{{project-key}}/orders/{{order-id}}
 Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
 
-{
+    
+    {
     "version": {{order-version}},
     "actions": [
         {
@@ -24,3 +24,4 @@ Authorization: Bearer {{ctp_access_token}}
           }
     ]
 }
+

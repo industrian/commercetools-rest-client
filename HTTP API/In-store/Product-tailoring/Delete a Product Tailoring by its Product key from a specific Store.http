@@ -4,15 +4,12 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### Delete Product by key
+### Delete a Product Tailoring by its Product key from a specific Store
+@store-key = 
 @product-key = 
-@product-version = 
+@product-tailoring-version = 
 
-DELETE https://api.{{host}}/{{project-key}}/products/key={{product-key}}
-#?priceCurrency=
-#&priceCountry=
-#&priceCustomerGroup=
-#&priceChannel=
-#&version={{product-version}}
+DELETE https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/products/key={{product-key}}/product-tailoring
+#?version={{product-tailoring-version}}
 #&expand=
 Authorization: Bearer {{ctp_access_token}}

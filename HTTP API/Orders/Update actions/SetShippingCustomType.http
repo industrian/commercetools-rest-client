@@ -4,23 +4,30 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetShippingCustomField
-@store-key = 
+### SetShippingCustomType
 @order-id = 
 @order-version = 
+@type-id = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
-#?expand=
+POST https://api.{{host}}/{{project-key}}/orders/{{order-id}}
 Authorization: Bearer {{ctp_access_token}}
+Content-Type: application/json
 
-{
+    
+    {
     "version": {{order-version}},
     "actions": [
         {
-            "action" : "setShippingCustomField",
+            "action" : "setShippingCustomType",
             "shippingKey" : "shipping-key-express",
-            "name" : "ExampleStringTypeField",
-            "value" : "TextString"
+            "type" : {
+              "id" : "{{type-id}}",
+              "typeId" : "type"
+            },
+            "fields" : {
+              "exampleStringTypeField" : "TextString"
+            }
           }
     ]
 }
+

@@ -4,22 +4,23 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetCustomField
+### ChangeLineItemsOrder
 @store-key = 
-@quote-id = 
-@quote-version = 
+@cart-id = 
+@cart-version = 
+@lineItemId2 = 
+@lineItemId = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/quotes/{{quote-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/carts/{{cart-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 
 {
-    "version": {{quote-version}},
+    "version": {{cart-version}},
     "actions": [
         {
-            "action" : "setCustomField",
-            "name" : "ExampleStringTypeField",
-            "value" : "TextString"
+            "action" : "changeLineItemsOrder",
+            "lineItemOrder" : [ "{{lineItemId2}}", "{{lineItemId}}" ]
           }
     ]
 }

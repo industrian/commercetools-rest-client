@@ -4,21 +4,21 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetAnonymousId
-@shopping-list-id = 
-@shopping-list-version = 
+### RemoveVariant
+@product-tailoring-id = 
+@product-tailoring-version = 
 
-POST https://api.{{host}}/{{project-key}}/shopping-lists/{{shopping-list-id}}
+POST https://api.{{host}}/{{project-key}}/product-tailoring/{{product-tailoring-id}}
 Authorization: Bearer {{ctp_access_token}}
 Content-Type: application/json
 
     
     {
-    "version": {{shopping-list-version}},
+    "version": {{product-tailoring-version}},
     "actions": [
         {
-            "action" : "setAnonymousId",
-            "anonymousId" : "anonymousId"
+            "action" : "removeVariant",
+            "id" : 2
           }
     ]
 }

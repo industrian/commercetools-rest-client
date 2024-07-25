@@ -4,11 +4,10 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### SetCustomType
+### ChangeCustomer
 @store-key = 
 @quote-id = 
 @quote-version = 
-@type-id = 
 
 POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/quotes/{{quote-id}}
 #?expand=
@@ -18,13 +17,10 @@ Authorization: Bearer {{ctp_access_token}}
     "version": {{quote-version}},
     "actions": [
         {
-            "action" : "setCustomType",
-            "type" : {
-              "id" : "{{type-id}}",
-              "typeId" : "type"
-            },
-            "fields" : {
-              "exampleStringTypeField" : "TextString"
+            "action" : "changeCustomer",
+            "customer" : {
+              "typeId" : "customer",
+              "id" : "43ddac22-3daa-4689-8975-9f80750ea2e7"
             }
           }
     ]

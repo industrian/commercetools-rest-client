@@ -4,15 +4,10 @@
     
     @ctp_access_token = {{auth.response.body.access_token}}
 
-### Query my carts in store
+### Gets the current or staged representation of a Product Tailoring by its Product ID from a specific Store
 @store-key = 
+@product-id = 
 
-GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/me/carts
+GET https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/products/{{product-id}}/product-tailoring
 #?expand=
-#&sort=
-#&limit=
-#&offset=
-#&withTotal=
-#&where=
-#&/^var[.][a-zA-Z0-9]+$/=
 Authorization: Bearer {{ctp_access_token}}

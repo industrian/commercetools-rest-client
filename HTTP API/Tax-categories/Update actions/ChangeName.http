@@ -18,7 +18,7 @@ Content-Type: application/json
     "actions": [
         {
             "action" : "changeName",
-            "name" : "name"
+            "name" : "New Name"
           }
     ]
 }

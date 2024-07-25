@@ -6,16 +6,16 @@
 
 ### TransitionState
 @store-key = 
-@order-id = 
-@order-version = 
+@quote-id = 
+@quote-version = 
 @state-id = 
 
-POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/orders/{{order-id}}
+POST https://api.{{host}}/{{project-key}}/in-store/key={{store-key}}/quotes/{{quote-id}}
 #?expand=
 Authorization: Bearer {{ctp_access_token}}
 
 {
-    "version": {{order-version}},
+    "version": {{quote-version}},
     "actions": [
         {
             "action" : "transitionState",
